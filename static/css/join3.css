@@ -1,0 +1,170 @@
+
+/* CSS Document */
+.joinlist {
+}
+.showlist .workcontent{
+	border-bottom: 1px solid #d12249;
+}
+.showlist .openjoinlist::after{
+	transform: rotateX(180deg);
+}
+.showlist .openjoinlist::before{
+	content: "";
+	width: 100%;
+	height: 20px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.joinlist > li {
+  counter-increment: step-counter;
+  padding:30px 0;
+}
+.joinlist .item ul{
+list-style-position: inside;
+list-style-type: disc!important;
+}
+.joinlist .item ol{
+list-style-position: inside;
+list-style-type: decimal!important;
+}
+.joinlist .item {
+	padding:40px;
+	position: relative;
+	transition: 0.8s;
+	box-shadow: 3px 5px 20px 0px rgba(0,0,0,0.1);
+	justify-content: space-between;
+}
+.joinlist .item::after{
+	content: "";
+	width: 100%;
+	height: 3px;
+	display: block;
+	background: #d12249;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.joinlist > li h3{
+	font-size: 17px;
+    line-height: 1.4;
+    padding:0px 40px;
+    font-weight: 550;
+}
+.joinlist > li h3::before {
+    content: counter(step-counter);
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 10px;
+    color: #d12249;
+    font-weight: 500;
+}
+.joinlist > li.small h3::before {
+    content: "0"counter(step-counter);
+}
+.joinlist > li .workcontent{
+	padding:30px 200px;
+	font-size: 14px;
+	line-height: 1.8;
+	position: relative;
+}
+.joinlist > li .workcontent::before{
+	content: "工作内容";
+	display: block;
+	width: 200px;
+	color: #676767;
+	font-size: 14px;
+	line-height: 30px;
+	position: absolute;
+	left: 0;
+	top:30px;
+	text-align: center;
+}
+.joinlist > li .condition{
+	padding:30px 200px;
+	font-size: 14px;
+	line-height: 1.8;
+	position: relative;
+	display: none;
+}
+.joinlist > li .condition::before{
+	content: "条件要求";
+	display: block;
+	width: 200px;
+	color: #676767;
+	font-size: 14px;
+	line-height: 30px;
+	position: absolute;
+	left: 0;
+	top:30px;
+	text-align: center;
+}
+.joinlist > li a.joinmailto{
+	background:#d94e6e;
+	color:#fff;
+	font-size: 15px;
+	display: block;
+	position: absolute;
+	top: 90px;
+	right: 60px;
+	padding:10px 45px;
+	font-weight: 900;
+}
+.joinlist > li div.openjoinlist{
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translate(-50%,0);
+	color:#d12249;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: bold;
+	display: block!important;
+}
+.joinlist > li div.openjoinlist::after{
+	content: "\f103";
+	display: inline-block;
+	font-family: fontAwesome;
+	padding-left: 3px;
+}
+@media(max-width: 1180px){
+}
+@media(max-width: 767px){
+
+.joinlist > li .workcontent {
+    padding: 50px 0px 30px 0;
+}
+.joinlist > li .workcontent::before {
+ 
+    width: 100%;
+    top: 8px;
+    text-align: left;
+}
+.joinlist > li .condition {
+    padding: 50px 0px 30px 0;
+}
+.joinlist > li .condition::before {
+
+    display: block;
+    width: 100%;
+	top: 8px;
+	text-align: left;
+}
+.joinlist > li h3 {
+    padding: 0px 0px;
+}
+.joinlist > li a.joinmailto {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center;
+    padding: 10px 45px;
+	margin-bottom: 20px;
+}
+}

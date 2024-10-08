@@ -1,0 +1,71 @@
+
+/* CSS Document */
+/*文字編輯器*/
+.textEditor {
+  clear: both;
+  font-size: 15px;
+  color: #000;
+  line-height: 2;
+}
+
+.textEditor .myTitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.textEditor a {
+  color: #06F;
+}
+
+.textEditor img {
+  max-width: 100%;
+}
+
+.textEditor ul {
+  list-style: disc outside;
+  padding-left: 30px;
+}
+.textEditor ol {
+  list-style: decimal outside;
+  padding-left: 30px;
+}
+.textEditor table {
+  border-collapse: collapse;
+}
+.textEditor tr:hover{
+  background: #f3f3f3;
+}
+.textEditor th {
+  line-height: 15px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #4c75c3;
+  border-right: none;
+  border-left: none;
+}
+.textEditor td {
+  padding: 10px 8px;
+}
+.textEditor hr {
+  height: 1px;
+  border: none;
+  background: #e9e9e9;
+}
+.textEditor blockquote {
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 2px 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: #ccc;
+}
+.textEditor .h3title{
+  font-size: 18px;
+  color:#000;
+}
+
+@media (max-width: 1023px) {
+
+}

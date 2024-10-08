@@ -1,0 +1,171 @@
+
+/* CSS Document */
+.careerList {
+}
+.careerList li {
+  counter-increment: step-counter;
+}
+.careerList .item {
+  position: relative;
+  transition: 0.8s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.careerList .item::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background:#d12249;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 50;
+}
+.careerList li:hover .item::before {
+  width: 100%;
+}
+.careerList .item .Img{
+ flex: 0 0 50%;
+}
+.careerList li:nth-child(even) .item .Img{
+  order:999;
+}
+.careerList .item .Img a{
+  position: relative;
+  display: block;
+  background: #000;
+}
+.careerList .item .Img a img{
+  position: relative;
+  z-index: 10;
+  display: block;
+  transition: 0.6s;
+  width: 100%;
+}
+.careerList li:hover .item .Img a img{
+  opacity: 0.5;
+}
+.careerList .Img a::after{
+  content: "\f002";
+  font-family: fontAwesome;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,200%);
+  position: absolute;
+  z-index: 10;
+  background:#d12249;
+  border-radius: 99em;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.9s;
+  opacity: 0;
+}
+.careerList li:hover .Img a::after{
+  transform: translate(-50%,-50%);
+  opacity: 1;
+}
+.careerList .item .Txt{
+  color:#676767;
+  font-size: 14px;
+  padding:0 50px;
+  display: flex;
+  align-items: center;
+}
+.careerList li .item .Txt h3::before {
+    content: counter(step-counter);
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 10px;
+    color: #d12249;
+    font-weight: 500;
+}
+.careerList li.small .item .Txt h3::before {
+    content: "0"counter(step-counter);
+}
+
+.careerList .item .Txt h3{
+  font-size: 17px;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  font-weight: 550;
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+.careerList .item .Txt h3 a{
+  display: inline-block;  
+}
+.careerList .item .Txt h3 em{
+  color: #d12249;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+.careerList li .Txt p{
+  line-height: 1.8;
+}
+
+.thankInfo {
+  /*感謝資訊*/
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.thankInfo .Img {
+  padding-top: 80px;
+}
+.thankInfo .Img img{
+  max-width: 100%;
+  margin: 0 auto;
+box-shadow: 3px 5px 20px 0px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+@media(max-width: 1180px){
+
+}
+
+
+@media(max-width: 767px){
+.thankInfo .Img {
+  padding-top: 40px;
+}
+.careerList .item {
+   flex-wrap: wrap;
+}
+.careerList .item .Img {
+    flex: 0 0 100%;
+}
+.careerList li:nth-child(even) .item .Img{
+  order:0;
+}
+.careerList .item .Txt{
+  padding:30px 20px;
+}
+}
+@media(max-width: 600px){
+
+.thankInfo {
+    text-align: left;
+}
+
+}

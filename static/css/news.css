@@ -1,0 +1,365 @@
+
+/* CSS Document */
+.classNote{
+  padding-bottom:10px;
+}
+.fixed {
+  position: fixed;
+  top: 120px;
+  z-index: 1;
+  left: 50%;
+  transform: translate(290px , 0);
+}
+.yearlist{   
+  position: absolute;
+  letter-spacing: 1px;
+  right: 20px;
+  top: 20px;
+  font-size: 13px;
+  color:#6b6b6b;
+  cursor:pointer;
+  z-index: 30;
+  background: #fff;
+  text-align: center;
+}
+.yearlist h6{
+  line-height: 45px;
+  border-radius: 5px;
+  padding:0 20px 0 25px;
+  border:1px solid #dcdcdc;
+}
+.yearlist h6 em {
+  display: inline-block;
+  padding:0 3px;
+  color:#d5d5d5;
+}
+.yearlist h6 i{
+  display: inline-block;
+  padding-left: 10px;
+  color: #2d2d2d;
+  font-size: 20px;
+  transform: translate(0,3px);
+}
+.yearlist ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+box-shadow: 3px -1px 10px rgba(0,0,0,0.1);
+border:1px solid #dcdcdc;
+overflow: hidden;
+line-height: 30px;
+transform: translate(0,-1px);
+}
+.yearlist ul li{
+
+}
+.yearlist ul li:hover{
+  color:#fff;
+  background:#d12249;
+}
+/*新訊列表*/
+
+/*內頁*/
+/****分享*****/
+
+ul.newsList{
+  flex-wrap:wrap;
+  display:flex;
+}
+ul.newsList li:first-child{
+  flex: 1 1 100%;
+}
+ul.newsList li:first-child .item{
+  align-items: center;
+  display: flex;
+}
+ul.newsList li:first-child .Img{
+  display: block;
+  flex:0 0 45%;
+  box-shadow: -5px -4px 10px rgba(0,0,0,0.1);
+}
+ul.newsList li:first-child .Img img{
+  display: block;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+}
+ul.newsList li:first-child .Img::before{
+  content: "";
+  width: 15px;
+  height: calc(100% - 20px);
+  display: block;
+  background:#fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+ul.newsList li:first-child .Img::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 15px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+ul.newsList li:first-child .Txt .date{
+  font-size: 15px;
+}
+ul.newsList li:first-child .Txt .date strong{
+  font-size: 50px;
+}
+ul.newsList li:first-child .Txt .date .newIcon{
+  font-size: 15px;
+}
+ul.newsList li:first-child .Txt .rightbox h3 a{
+    font-size: 22px;
+    -webkit-line-clamp: 2;
+    height: 60px;
+}
+ul.newsList li:first-child .Txt{
+  padding-left: 20px;
+}
+ul.newsList li{
+  flex: 0 0 50%;
+  overflow: hidden;  
+  position: relative;
+}
+ul.newsList li .item{
+  padding: 25px;
+}
+ul.newsList li .Img{
+  display: none;
+  position: relative;
+}
+ul.newsList li .Txt{
+  display: flex;
+  padding: 20px;
+  transition: 0.9s;
+}
+ul.newsList li:first-child:hover .Txt{
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+ul.newsList li:hover .Txt{
+  box-shadow: 1px 7px 20px rgba(0,0,0,0.1);
+}
+ul.newsList li .Txt .date{
+  flex:0 0 100px;
+  font-size: 12px;
+  line-height: 1;
+  color:#000;
+  text-align: center;
+}
+ul.newsList li .Txt .date strong{
+  font-size: 35px;
+  font-weight: normal;
+  display: block;
+}
+ul.newsList li .Txt .date .newIcon{
+  padding-top: 13px;
+}
+ul.newsList li .Txt .rightbox{
+  position: relative;
+  padding: 5px 0 5px 40px;
+}
+ul.newsList li .Txt .rightbox::before{
+  content: "";
+  width:17px;
+  height: 100%;
+  display: block;
+  background:url(../image/linebg.jpg); 
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+ul.newsList li .Txt .rightbox h3{
+  font-weight: 550;
+  padding-bottom: 20px;
+}
+ul.newsList li .Txt .rightbox h3 a{
+    font-size: 18px;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+ul.newsList li .Txt .rightbox h3 a:hover{
+  color:#d12249;
+}
+ul.newsList li .Txt .rightbox p{
+  color:#979797;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+}
+.insmain{
+  display: flex;
+  align-items: flex-start;
+}
+.inscontent{
+  width: calc(100% - 290px);
+}
+/********標題區*******/
+.titleArea {
+  clear: both;
+  margin-bottom: 30px;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid #d12249;
+  display: flex;
+  align-items: center;
+}
+
+.titleArea h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  overflow: hidden;
+}
+.titleArea .date{
+  flex:0 0 100px;
+  font-size: 12px;
+  line-height: 1;
+  color:#000;
+  text-align: center;
+}
+.titleArea .date strong{
+  font-size: 35px;
+  font-weight: normal;
+  display: block;
+}
+.titleArea .dateArea{
+  font-weight: 900;
+}
+.titleArea .newIcon{
+  padding-right: 15px;
+  display: inlien-block;
+}
+.titleArea .Txt{
+  position: relative;
+  padding: 5px 0 5px 40px;
+}
+.titleArea .Txt::before{
+  content: "";
+  width:17px;
+  height: 100%;
+  display: block;
+  background:url(../image/linebg.jpg); 
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.side_news {
+  background:#c31f43;
+  width:250px;
+  margin-left: 40px;
+  color: #fff;
+  padding: 20px 15px;
+}
+.side_news ul li{
+  border-bottom: 1px solid #d14e6b;
+  padding: 15px 0; 
+}
+.side_news ul li .newsDate{
+  color:#de8397;
+  padding-top: 5px;
+}
+.side_news ul li a{
+  color:#fff;
+}
+.side_news ul li:hover a{
+      text-decoration: underline;
+}
+@media (max-width: 1180px){
+.fixed {
+  top:80px;
+    left: auto;
+    right: 20px;
+    transform: translate(0% , 0);
+}
+}
+@media (max-width: 1023px) {
+
+.insmain{
+  display: block;
+}
+.side_news {
+  margin-top: 40px;
+  margin-left: 0px;
+  width: 100%;
+}
+.fixed {
+  position: relative;
+  top: auto;
+  z-index: 1;
+  left: 0%;
+  transform: translate(0,0);
+}
+.inscontent {
+    width: calc(100% - 0px);
+}
+}
+
+@media (max-width: 767px) {
+
+.yearlist{   
+  position: relative;
+  right: auto;
+  top: auto;
+  margin-bottom: 30px;
+  clear: both;
+}
+
+
+
+ul.newsList li{
+  flex: 0 0 100%;
+}
+ul.newsList li:first-child .item{
+  flex-direction: column;
+}
+ul.newsList li:first-child .Img{
+  flex:0 0 100%;
+}
+ul.newsList li:first-child .Txt {
+    padding: 20px 0 ;
+}
+ul.newsList li .item {
+    padding: 0px;
+}
+ul.newsList li .Txt {
+    padding: 20px 0;
+}
+
+
+.titleArea {
+  display: block;
+
+}
+.titleArea .Txt {
+  margin-top:10px;
+    padding: 30px 0 0 0;
+}
+
+.titleArea .Txt::before {
+
+    width: 100%;
+    height: 17px;
+}
+}

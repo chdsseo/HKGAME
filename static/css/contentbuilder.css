@@ -1,0 +1,1708 @@
+
+@import url(fontello.css);
+@import url(ionicons.min.css);
+/**********************************
+    Adjustment for Default
+***********************************/
+.textEditor .contentBuilder {
+  line-height: 1.8;
+}
+
+.textEditor .contentBuilder .container > .row, .textEditor .contentBuilder .container > div > .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.textEditor .contentBuilder .row img {
+  /*margin: 1.4em 0 1em;*/
+}
+
+.textEditor .contentBuilder .row {
+  margin: 0;
+}
+
+.textEditor .contentBuilder .imgFull img {
+  width: 100%;
+}
+
+/*--自訂樣式開始--*/
+.textEditor .contentBuilder .nullBox {
+  height: 30px;
+}
+
+.textEditor .contentBuilder {
+  padding: 10px 0;
+}
+
+.textEditor .contentBuilder .style01 .Img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.textEditor .contentBuilder .style01 .Txt {
+  margin-bottom: 20px;
+}
+
+.textEditor .contentBuilder.style02 .row {
+  margin: 0 -20px;
+}
+
+.textEditor .contentBuilder.style02 .columnList {
+  float: left;
+  padding: 10px 20px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--自訂樣式結束--*/
+/**********************************
+    General
+***********************************/
+.textEditor .contentBuilder p, .textEditor .contentBuilder td, .textEditor .contentBuilder li, .textEditor .contentBuilder label {
+  /*font-size: 1.07em;
+  line-height: 1.8;
+  font-weight: 300;*/
+}
+
+.textEditor .contentBuilder h1, .textEditor .contentBuilder h2, .textEditor .contentBuilder h3, .textEditor .contentBuilder h4, .textEditor .contentBuilder h5, .textEditor .contentBuilder h6 {
+  font-weight: 400;
+  /*font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 1.4;*/
+}
+
+.textEditor .contentBuilder h1 {
+  font-size: 2.36em;
+  margin: 0.4em 0;
+}
+
+.textEditor .contentBuilder h2 {
+  font-size: 2em;
+  margin: 0.6em 0;
+}
+
+.textEditor .contentBuilder h3 {
+  font-size: 1.73em;
+  margin: 0.7em 0;
+}
+
+.textEditor .contentBuilder h4 {
+  font-size: 1.6em;
+  margin: 0.8em 0;
+}
+
+.textEditor .contentBuilder h5 {
+  font-size: 1.48em;
+  margin: 0.8em 0;
+}
+
+.textEditor .contentBuilder h6 {
+  font-size: 1.3em;
+  margin: 0.8em 0;
+}
+
+.textEditor .contentBuilder p {
+  margin: 12px 0;
+}
+
+.textEditor .contentBuilder .display {
+  margin-bottom: 0.5em;
+}
+
+.textEditor .contentBuilder .display h2 {
+  /*font-weight: 800;*/
+  font-size: 26px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.textEditor .contentBuilder .display p {
+  font-size: 1.3em;
+  /*font-style: italic;*/
+}
+
+.textEditor .contentBuilder table td {
+  padding: 12px;
+}
+
+@media all and (max-width: 1024px) {
+  .textEditor .contentBuilder h1 {
+    font-size: 2em;
+  }
+  .textEditor .contentBuilder h2 {
+    font-size: 1.73em;
+  }
+  .textEditor .contentBuilder h3 {
+    font-size: 1.6em;
+  }
+  .textEditor .contentBuilder h4 {
+    font-size: 1.48em;
+  }
+  .textEditor .contentBuilder h5 {
+    font-size: 1.3em;
+    /*font-weight: bold;*/
+  }
+  .textEditor .contentBuilder h6 {
+    font-size: 1em;
+    /*font-weight: bold;*/
+  }
+  .textEditor .contentBuilder .display h1 {
+    font-size: 2.2em;
+  }
+  .textEditor .contentBuilder .display p {
+    font-size: 1.1em;
+  }
+}
+
+/* FIX: Preventing Chrome from wrapping text with span-style (during editing) */
+.textEditor .contentBuilder .display h2 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder .display p span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h1 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h2 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h3 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h4 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h5 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder h6 span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder p span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder li span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.textEditor .contentBuilder a {
+  color: #009E91;
+}
+
+.textEditor .contentBuilder hr {
+  position: relative;
+  padding: 10px 0;
+  height: auto;
+  border: none;
+  background: none;
+}
+
+.textEditor .contentBuilder hr:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.5px;
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+}
+
+.textEditor .contentBuilder img {
+  max-width: 100%;
+}
+
+.textEditor .contentBuilder figure {
+  margin: 0;
+}
+
+.textEditor .contentBuilder ol, .textEditor .contentBuilder ul {
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+/**********************************
+    Grid
+***********************************/
+.textEditor .contentBuilder .container {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 90%;
+}
+
+/*@media (min-width: 40rem) {*/
+@media (min-width: 640px) {
+  .textEditor .contentBuilder .column {
+    float: left;
+    padding-left: 1rem;
+    /* beta3 */
+    padding-right: 1rem;
+    /* beta3 */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .textEditor .contentBuilder .column.full {
+    width: 100%;
+  }
+  .textEditor .contentBuilder .column.two-third {
+    width: 66.7%;
+  }
+  .textEditor .contentBuilder .column.two-fourth {
+    width: 75%;
+  }
+  .textEditor .contentBuilder .column.two-fifth {
+    width: 80%;
+  }
+  .textEditor .contentBuilder .column.two-sixth {
+    width: 83.3%;
+  }
+  .textEditor .contentBuilder .column.half {
+    width: 50%;
+  }
+  .textEditor .contentBuilder .column.third {
+    width: 33.3%;
+  }
+  .textEditor .contentBuilder .column.fourth {
+    width: 25%;
+  }
+  .textEditor .contentBuilder .column.fifth {
+    width: 20%;
+  }
+  .textEditor .contentBuilder .column.sixth {
+    width: 16.6%;
+  }
+  .textEditor .contentBuilder .column.flow-opposite {
+    float: right;
+  }
+}
+
+.textEditor .contentBuilder .clearfix:before, .textEditor .contentBuilder .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.textEditor .contentBuilder .clearfix:after {
+  clear: both;
+}
+
+.textEditor .contentBuilder .clearfix {
+  *zoom: 1;
+}
+
+/**********************************
+    Elements
+***********************************/
+.textEditor .contentBuilder .center {
+  text-align: center;
+}
+
+.textEditor .contentBuilder .right {
+  text-align: right;
+}
+
+.textEditor .contentBuilder .left {
+  text-align: left;
+}
+
+.textEditor .contentBuilder .padding-10 {
+  padding: 10px;
+}
+
+.textEditor .contentBuilder .padding-20 {
+  padding: 20px;
+}
+
+.textEditor .contentBuilder .padding-25 {
+  padding: 25px;
+}
+
+.textEditor .contentBuilder .padding-30 {
+  padding: 30px;
+}
+
+.textEditor .contentBuilder .padding-35 {
+  padding: 35px;
+}
+
+.textEditor .contentBuilder .padding-40 {
+  padding: 40px;
+}
+
+@media all and (max-width: 540px) {
+  /*  .textEditor .contentBuilder .center {
+    text-align: initial;
+  }
+  .textEditor .contentBuilder .right {
+    text-align: initial;
+  }
+  .textEditor .contentBuilder .left {
+    text-align: initial;
+  }*/
+  .textEditor .contentBuilder .padding-20 {
+    padding: 0;
+  }
+  .textEditor .contentBuilder .padding-25 {
+    padding: 0;
+  }
+  .textEditor .contentBuilder .padding-30 {
+    padding: 0;
+  }
+  .textEditor .contentBuilder .padding-35 {
+    padding: 0;
+  }
+  .textEditor .contentBuilder .padding-40 {
+    padding: 0;
+  }
+}
+
+.textEditor .contentBuilder .margin-0 {
+  margin: 0 !important;
+}
+
+.textEditor .contentBuilder .margin-20 {
+  margin: 20px !important;
+}
+
+.textEditor .contentBuilder .margin-25 {
+  margin: 25px !important;
+}
+
+.textEditor .contentBuilder .margin-30 {
+  margin: 30px !important;
+}
+
+.textEditor .contentBuilder .margin-35 {
+  margin: 35px !important;
+}
+
+.textEditor .contentBuilder .margin-40 {
+  margin: 40px !important;
+}
+
+.textEditor .contentBuilder .is-card {
+  display: table;
+  background-color: #fff;
+}
+
+.textEditor .contentBuilder .is-card > * {
+  display: table;
+}
+
+.textEditor .contentBuilder .is-card-circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 500px;
+  padding: 70px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 540px) {
+  .textEditor .contentBuilder .is-card-circle {
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
+  }
+}
+
+.textEditor .contentBuilder .is-card-content-centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.textEditor .contentBuilder .max-390 {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.textEditor .contentBuilder .shadow-1 {
+  /* card */
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.textEditor .contentBuilder .shadow-2 {
+  /* screenshot */
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+}
+
+.textEditor .contentBuilder .shadow-3 {
+  /* highlight */
+  -webkit-box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+}
+
+.textEditor .contentBuilder img.circle {
+  border-radius: 500px;
+  margin-top: 0;
+}
+
+.textEditor .contentBuilder img.bordered {
+  border: #ccc 1px solid;
+}
+
+.textEditor .contentBuilder .embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+}
+
+.textEditor .contentBuilder .embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.textEditor .contentBuilder .embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+.textEditor .contentBuilder .embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.textEditor .contentBuilder .list {
+  position: relative;
+  text-align: center;
+}
+
+.textEditor .contentBuilder .list > i {
+  position: absolute;
+  left: -3px;
+  top: 7px;
+  font-size: 1.7em;
+  line-height: 1;
+}
+
+.textEditor .contentBuilder .list .Img, .textEditor .contentBuilder .list h3, .textEditor .contentBuilder .list p {
+  margin: 0;
+}
+
+/*.textEditor .contentBuilder .list > h2, .textEditor .contentBuilder .list > h3 {
+  margin: 0 0 0 50px;
+}
+
+.textEditor .contentBuilder .list > p {
+  margin: 5px 0 0 50px;
+}*/
+.textEditor .contentBuilder .quote {
+  position: relative;
+  margin: 1.5em 0;
+}
+
+.textEditor .contentBuilder .quote > i {
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  font-size: 2em;
+}
+
+.textEditor .contentBuilder .quote > small {
+  margin-left: 50px;
+  opacity: 0.7;
+  font-size: 1em;
+}
+
+.textEditor .contentBuilder .quote > p {
+  margin-left: 50px;
+  font-size: 1.5em;
+}
+
+@media all and (max-width: 540px) {
+  .textEditor .contentBuilder .quote > i {
+    left: -15px;
+    font-size: 1.5em;
+  }
+  .textEditor .contentBuilder .quote > small {
+    margin-left: 20px;
+    font-size: 1em;
+  }
+  .textEditor .contentBuilder .quote > p {
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
+}
+
+.textEditor .contentBuilder .is-social {
+  line-height: 1;
+  margin-bottom: 1.5em;
+}
+
+.textEditor .contentBuilder .is-social a > i {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  margin: 0 15px 0 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.textEditor .contentBuilder .is-social a:hover > i {
+  color: #08c9b9;
+}
+
+.textEditor .contentBuilder .is-light-text .is-social a > i {
+  color: #fff;
+}
+
+.textEditor .contentBuilder .is-light-text .is-social a:hover > i {
+  color: #fff;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-social a > i {
+  color: #000;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-social a:hover > i {
+  color: #000;
+}
+
+.textEditor .contentBuilder .social {
+  line-height: 1;
+  margin-bottom: 1.5em;
+}
+
+.textEditor .contentBuilder .social a > i {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  margin: 0 15px 0 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.textEditor .contentBuilder .social a:hover > i {
+  color: #08c9b9;
+}
+
+.textEditor .contentBuilder .is-light-text .social a > i {
+  color: #fff;
+}
+
+.textEditor .contentBuilder .is-light-text .social a:hover > i {
+  color: #fff;
+}
+
+.textEditor .contentBuilder .is-rounded-button-big {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-rounded-button-big a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 500px;
+  width: 110px;
+  height: 110px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-rounded-button-big a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.textEditor .contentBuilder .is-rounded-button-big a:first-child {
+  margin: 0 20px 0 0;
+}
+
+.textEditor .contentBuilder .is-rounded-button-big a:last-child {
+  margin: 0 0 0 20px;
+}
+
+.textEditor .contentBuilder .is-rounded-button-medium {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-rounded-button-medium a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 500px;
+  width: 70px;
+  height: 70px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-rounded-button-medium a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 30px 0 0;
+  width: 110px;
+  height: 110px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big2 {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big2 a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 30px 0 0;
+  width: 150px;
+  height: 70px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-boxed-button-big2 a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 30px 0 0;
+  width: 70px;
+  height: 70px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium2 {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium2 a {
+  display: table;
+  float: left;
+  text-align: center;
+  /*margin: 0 30px 0 0;*/
+  /*width: 100px;*/
+  width: 50px;
+  height: 50px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-boxed-button-medium2 a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.textEditor .contentBuilder .is-boxed-button-small {
+  display: inline-block;
+}
+
+.textEditor .contentBuilder .is-boxed-button-small a {
+  display: table;
+  float: left;
+  text-align: center;
+  margin: 0 20px 0 0;
+  width: 50px;
+  height: 50px;
+  background-color: #aaa;
+}
+
+.textEditor .contentBuilder .is-boxed-button-small a i {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.textEditor .contentBuilder .size-12 {
+  font-size: 12px;
+}
+
+.textEditor .contentBuilder .size-14 {
+  font-size: 14px;
+}
+
+.textEditor .contentBuilder .size-16 {
+  font-size: 16px;
+}
+
+.textEditor .contentBuilder .size-18 {
+  font-size: 18px;
+}
+
+.textEditor .contentBuilder .size-21 {
+  font-size: 21px;
+}
+
+.textEditor .contentBuilder .size-24 {
+  font-size: 24px;
+}
+
+.textEditor .contentBuilder .size-32 {
+  font-size: 32px;
+}
+
+.textEditor .contentBuilder .size-48 {
+  font-size: 48px;
+}
+
+.textEditor .contentBuilder .size-64 {
+  font-size: 64px;
+}
+
+.textEditor .contentBuilder .size-80 {
+  font-size: 80px;
+}
+
+.textEditor .contentBuilder .size-96 {
+  font-size: 96px;
+}
+
+@media all and (max-width: 1024px) {
+  .textEditor .contentBuilder .size-12 {
+    font-size: 12px;
+  }
+  .textEditor .contentBuilder .size-14 {
+    font-size: 14px;
+  }
+  .textEditor .contentBuilder .size-16 {
+    font-size: 16px;
+  }
+  .textEditor .contentBuilder .size-18 {
+    font-size: 18px;
+  }
+  .textEditor .contentBuilder .size-21 {
+    font-size: 21px;
+  }
+  .textEditor .contentBuilder .size-24 {
+    font-size: 24px;
+  }
+  .textEditor .contentBuilder .size-32 {
+    font-size: 28px;
+  }
+  .textEditor .contentBuilder .size-48 {
+    font-size: 32px;
+  }
+  .textEditor .contentBuilder .size-64 {
+    font-size: 36px;
+  }
+  .textEditor .contentBuilder .size-80 {
+    font-size: 40px;
+  }
+  .textEditor .contentBuilder .size-96 {
+    font-size: 44px;
+  }
+}
+
+.textEditor .contentBuilder .size-12 span {
+  font-size: 12px;
+}
+
+.textEditor .contentBuilder .size-14 span {
+  font-size: 14px;
+}
+
+.textEditor .contentBuilder .size-16 span {
+  font-size: 16px;
+}
+
+.textEditor .contentBuilder .size-18 span {
+  font-size: 18px;
+}
+
+.textEditor .contentBuilder .size-21 span {
+  font-size: 21px;
+}
+
+.textEditor .contentBuilder .size-24 span {
+  font-size: 24px;
+}
+
+.textEditor .contentBuilder .size-32 span {
+  font-size: 32px;
+}
+
+.textEditor .contentBuilder .size-48 span {
+  font-size: 48px;
+}
+
+.textEditor .contentBuilder .size-64 span {
+  font-size: 64px;
+}
+
+.textEditor .contentBuilder .size-80 span {
+  font-size: 80px;
+}
+
+.textEditor .contentBuilder .size-96 span {
+  font-size: 96px;
+}
+
+@media all and (max-width: 1024px) {
+  .textEditor .contentBuilder .size-12 span {
+    font-size: 12px;
+  }
+  .textEditor .contentBuilder .size-14 span {
+    font-size: 14px;
+  }
+  .textEditor .contentBuilder .size-16 span {
+    font-size: 16px;
+  }
+  .textEditor .contentBuilder .size-18 span {
+    font-size: 18px;
+  }
+  .textEditor .contentBuilder .size-21 span {
+    font-size: 21px;
+  }
+  .textEditor .contentBuilder .size-24 span {
+    font-size: 24px;
+  }
+  .textEditor .contentBuilder .size-32 span {
+    font-size: 28px;
+  }
+  .textEditor .contentBuilder .size-48 span {
+    font-size: 32px;
+  }
+  .textEditor .contentBuilder .size-64 span {
+    font-size: 36px;
+  }
+  .textEditor .contentBuilder .size-80 span {
+    font-size: 40px;
+  }
+  .textEditor .contentBuilder .size-96 span {
+    font-size: 44px;
+  }
+}
+
+/**********************************
+    Title Styles
+***********************************/
+.textEditor .contentBuilder .is-light-text * {
+  color: #fff;
+}
+
+.textEditor .contentBuilder .is-dark-text * {
+  color: #000;
+}
+
+.textEditor .contentBuilder .is-title1-96 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.textEditor .contentBuilder .is-title1-80 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title1-64 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title1-48 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title1-32 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title2-96 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.textEditor .contentBuilder .is-title2-80 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title2-64 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title2-48 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title2-32 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.textEditor .contentBuilder .is-title3-96 {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  padding: 20px 0;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title3-80 {
+  margin-top: 25px;
+  margin-bottom: 33px;
+  padding: 20px 0;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title3-64 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 18px 0;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title3-48 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 18px 0;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title3-32 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title3-96 {
+  border-top: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title3-80 {
+  border-top: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title3-64 {
+  border-top: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title3-48 {
+  border-top: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title3-32 {
+  border-top: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title3-96 {
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title3-80 {
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title3-64 {
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title3-48 {
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title3-32 {
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title4-96 {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  padding: 20px 30px;
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title4-80 {
+  margin-top: 25px;
+  margin-bottom: 33px;
+  padding: 20px 30px;
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title4-64 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 18px 28px;
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title4-48 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 18px 25px;
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title4-32 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title4-96 {
+  border: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title4-80 {
+  border: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title4-64 {
+  border: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title4-48 {
+  border: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title4-32 {
+  border: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title4-96 {
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title4-80 {
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title4-64 {
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title4-48 {
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title4-32 {
+  border: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title5-96 {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title5-80 {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title5-64 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title5-48 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title5-32 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title5-96 {
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title5-80 {
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title5-64 {
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title5-48 {
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-light-text .is-title5-32 {
+  border-bottom: #fff 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title5-96 {
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title5-80 {
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title5-64 {
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title5-48 {
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-title5-32 {
+  border-bottom: #000 2px solid;
+}
+
+.textEditor .contentBuilder .is-title-lite {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.textEditor .contentBuilder .is-title-lite.is-title3-96, .textEditor .contentBuilder .is-title-lite.is-title4-96, .textEditor .contentBuilder .is-title-lite.is-title5-96 {
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+.textEditor .contentBuilder .is-title-lite.is-title3-80, .textEditor .contentBuilder .is-title-lite.is-title4-80, .textEditor .contentBuilder .is-title-lite.is-title5-80 {
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+.textEditor .contentBuilder .is-title-lite.is-title3-64, .textEditor .contentBuilder .is-title-lite.is-title4-64, .textEditor .contentBuilder .is-title-lite.is-title5-64 {
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+.textEditor .contentBuilder .is-title-lite.is-title3-48, .textEditor .contentBuilder .is-title-lite.is-title4-48, .textEditor .contentBuilder .is-title-lite.is-title5-48 {
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+.textEditor .contentBuilder .is-title-lite.is-title3-32, .textEditor .contentBuilder .is-title-lite.is-title4-32, .textEditor .contentBuilder .is-title-lite.is-title5-32 {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.textEditor .contentBuilder .is-title-bold {
+  /*font-weight: 800;*/
+}
+
+.textEditor .contentBuilder .is-title-bold.is-title3-96, .textEditor .contentBuilder .is-title-bold.is-title4-96, .textEditor .contentBuilder .is-title-bold.is-title5-96 {
+  border-width: 4px;
+}
+
+.textEditor .contentBuilder .is-title-bold.is-title3-80, .textEditor .contentBuilder .is-title-bold.is-title4-80, .textEditor .contentBuilder .is-title-bold.is-title5-80 {
+  border-width: 4px;
+}
+
+.textEditor .contentBuilder .is-title-bold.is-title3-64, .textEditor .contentBuilder .is-title-bold.is-title4-64, .textEditor .contentBuilder .is-title-bold.is-title5-64 {
+  border-width: 3px;
+}
+
+.textEditor .contentBuilder .is-title-bold.is-title3-48, .textEditor .contentBuilder .is-title-bold.is-title4-48, .textEditor .contentBuilder .is-title-bold.is-title5-48 {
+  border-width: 3px;
+}
+
+.textEditor .contentBuilder .is-title-bold.is-title3-32, .textEditor .contentBuilder .is-title-bold.is-title4-32, .textEditor .contentBuilder .is-title-bold.is-title5-32 {
+  border-width: 2px;
+}
+
+.textEditor .contentBuilder .is-info1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.textEditor .contentBuilder .is-info1.size-21 {
+  margin-top: 12px;
+}
+
+.textEditor .contentBuilder .is-info1.size-24 {
+  margin-top: 15px;
+}
+
+.textEditor .contentBuilder .is-info2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.textEditor .contentBuilder .is-info2.size-21 {
+  margin-top: 12px;
+}
+
+.textEditor .contentBuilder .is-info2.size-24 {
+  margin-top: 15px;
+}
+
+.textEditor .contentBuilder .is-btn {
+  padding: 10px 50px;
+  font-size: 1em;
+  line-height: 2em;
+  border-radius: 0;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-transition: all 0.16s ease;
+  -o-transition: all 0.16s ease;
+  transition: all 0.16s ease;
+}
+
+.textEditor .contentBuilder .is-btn-ghost1 {
+  color: #000;
+  border: 2px solid #111;
+}
+
+.textEditor .contentBuilder .is-btn-ghost1:hover, .textEditor .contentBuilder .is-btn-ghost1:active, .textEditor .contentBuilder .is-btn-ghost1:focus {
+  color: #fff;
+  background-color: #111;
+  border: 2px solid #111;
+  text-decoration: none;
+}
+
+.textEditor .contentBuilder .is-light-text .is-btn-ghost1,
+.textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost1 {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.textEditor .contentBuilder .is-light-text .is-btn-ghost1:hover, .textEditor .contentBuilder .is-light-text .is-btn-ghost1:active, .textEditor .contentBuilder .is-light-text .is-btn-ghost1:focus,
+.textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost1:hover, .textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost1:active, .textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost1:focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-btn-ghost1,
+.textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost1 {
+  color: #000;
+  border: 2px solid #111;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-btn-ghost1:hover, .textEditor .contentBuilder .is-dark-text .is-btn-ghost1:active, .textEditor .contentBuilder .is-dark-text .is-btn-ghost1:focus,
+.textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost1:hover, .textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost1:active, .textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost1:focus {
+  color: #fff;
+  background-color: #111;
+  border: 2px solid #111;
+}
+
+.textEditor .contentBuilder .is-btn-ghost2 {
+  color: #000;
+  border: 2px solid #d7d7d7;
+  background-color: #d7d7d7;
+}
+
+.textEditor .contentBuilder .is-btn-ghost2:hover, .textEditor .contentBuilder .is-btn-ghost2:active, .textEditor .contentBuilder .is-btn-ghost2:focus {
+  color: #000;
+  background-color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+  text-decoration: none;
+}
+
+.textEditor .contentBuilder .is-light-text .is-btn-ghost2,
+.textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost2 {
+  color: #000;
+  border: 2px solid #f9f9f9;
+  background-color: #f9f9f9;
+}
+
+.textEditor .contentBuilder .is-light-text .is-btn-ghost2:hover, .textEditor .contentBuilder .is-light-text .is-btn-ghost2:active, .textEditor .contentBuilder .is-light-text .is-btn-ghost2:focus,
+.textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost2:hover, .textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost2:active, .textEditor .contentBuilder .is-dark-text .is-light-text .is-btn-ghost2:focus {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-btn-ghost2,
+.textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost2 {
+  color: #000;
+  border: 2px solid #d7d7d7;
+  background-color: #d7d7d7;
+}
+
+.textEditor .contentBuilder .is-dark-text .is-btn-ghost2:hover, .textEditor .contentBuilder .is-dark-text .is-btn-ghost2:active, .textEditor .contentBuilder .is-dark-text .is-btn-ghost2:focus,
+.textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost2:hover, .textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost2:active, .textEditor .contentBuilder .is-light-text .is-dark-text .is-btn-ghost2:focus {
+  color: #000;
+  background-color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+}
+
+.textEditor .contentBuilder .is-btn-small {
+  padding: 5px 25px;
+  font-size: 0.85em;
+}
+
+.textEditor .contentBuilder .is-upper {
+  text-transform: uppercase;
+}
+
+.textEditor .contentBuilder .is-rounded-30 {
+  border-radius: 30px;
+}
+
+.textEditor .contentBuilder .btn {
+  padding: 7px 25px;
+  font-size: 1em;
+  line-height: 2em;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-transition: all 0.16s ease;
+  -o-transition: all 0.16s ease;
+  transition: all 0.16s ease;
+}
+
+.textEditor .contentBuilder .btn.btn-primary {
+  color: #ffffff;
+  background-color: #08c9b9;
+}
+
+.textEditor .contentBuilder .btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #07b0a2;
+  border-color: #07b0a2;
+}
+
+.textEditor .contentBuilder .btn.btn-default {
+  color: #333333;
+  background-color: #d3d3d3;
+}
+
+.textEditor .contentBuilder .btn.btn-default:hover {
+  color: #111;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.textEditor .contentBuilder figure.hdr {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.textEditor .contentBuilder figure.hdr img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.textEditor .contentBuilder figure.hdr:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.textEditor .contentBuilder figure.hdr figcaption {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  padding: 0 2.5em;
+  color: #fff;
+  font-size: 1.55em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.textEditor .contentBuilder figure.hdr h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.textEditor .contentBuilder figure.hdr h2 span {
+  /*font-weight: 800;*/
+}
+
+.textEditor .contentBuilder figure.hdr p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  text-transform: uppercase;
+}
+
+.textEditor .contentBuilder figure.hdr h2, .textEditor .contentBuilder figure.hdr p {
+  margin: 0;
+  z-index: 10000;
+}
+
+.textEditor .contentBuilder figure.hdr div {
+  height: 100%;
+  z-index: 0;
+}
+
+.textEditor .contentBuilder figure.hdr div::before,
+.textEditor .contentBuilder figure.hdr div::after {
+  position: absolute;
+  content: '';
+}
+
+.textEditor .contentBuilder figure.one div::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.one div::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.two div::before {
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.two div::after {
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.three figcaption {
+  height: 70%;
+}
+
+.textEditor .contentBuilder figure.three p {
+  margin: 1em 0 0;
+  padding: 2em;
+  border: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.four figcaption {
+  height: 60%;
+  text-align: left;
+}
+
+.textEditor .contentBuilder figure.four p {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  padding: 2em;
+  border: 7px solid #fff;
+}
+
+.textEditor .contentBuilder figure.five figcaption {
+  height: 100%;
+  text-align: right;
+}
+
+.textEditor .contentBuilder figure.five h2 {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 10%;
+  border-bottom: 5px solid #fff;
+}
+
+.textEditor .contentBuilder figure.five p {
+  position: absolute;
+  right: 50px;
+  bottom: 10%;
+}
+
+.textEditor .contentBuilder figure.six figcaption {
+  height: 70%;
+}
+
+.textEditor .contentBuilder figure.six h2 {
+  padding-bottom: 3%;
+  border-bottom: 1px solid #fff;
+}
+
+.textEditor .contentBuilder figure.six p {
+  padding-top: 6%;
+}
+
+.textEditor .contentBuilder figure.seven figcaption {
+  height: 90%;
+  text-align: left;
+}
+
+.textEditor .contentBuilder figure.seven h2 {
+  border-bottom: 3px solid #fff;
+}
+
+.textEditor .contentBuilder figure.seven p {
+  padding-top: 1em;
+}
+
+.textEditor .contentBuilder figure.eight figcaption {
+  height: 100%;
+  text-align: right;
+}
+
+.textEditor .contentBuilder figure.eight h2 {
+  position: absolute;
+  left: 50%;
+  right: 50px;
+  bottom: 10%;
+}
+
+.textEditor .contentBuilder figure.eight p {
+  position: absolute;
+  left: 50px;
+  right: 50%;
+  top: 10%;
+  padding-right: 0.5em;
+  border-right: 1px solid #fff;
+}
+
+.textEditor .contentBuilder .noPadding {
+  padding: 0;
+}
+
+@media (max-width: 639px) {
+  .textEditor .contentBuilder.style02 .columnList {
+    width: 100%;
+  }
+  .textEditor .contentBuilder.style02 img {
+    display: inline-block;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 375px) {
+  .textEditor .contentBuilder .margin-40 {
+    margin: 20px !important;
+  }
+}

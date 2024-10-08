@@ -1,0 +1,1500 @@
+
+.stockMenu > ol{
+    display: flex;
+    padding-top: 100px;
+    margin: 0 -7px;
+}
+.stockMenu > ol dt{
+    width: 25%;
+    counter-increment: step-counter;
+}
+.stockMenu > ol dt .item{
+    padding:0 7px;
+}
+.stockMenu > ol dt .Img img{
+    width: 100%;
+    display: block;
+}
+.stockMenu > ol dt .Txt {
+    padding-top: 20px;
+}
+.stockMenu > ol dt .Txt h3{
+    font-size: 16px;
+    color: #000;
+}
+.stockMenu > ol dt .Txt h3::before{
+    content: "0"counter(step-counter);
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 5px;
+    color:#d12249;
+    font-weight: 500;
+}
+.stockMenu > ol dt .Txt article{
+    padding: 10px 0 10px 31px;
+    font-size: 14px;
+    line-height: 2;
+    color: #a2a2a2;
+}
+.stockMenu > ol dt .Txt article a:hover{
+    text-decoration: underline;
+}
+.stockhomewrap{
+    width: 1160px;
+    margin: 0 auto;
+}
+.stockspace{
+    display: flex;
+    align-items: center;
+}
+.spaceleft{
+    width: 65%;
+}
+.spaceright{
+    padding-left: 15px;
+    width: 35%;
+}
+.spaceright ul li img{
+    width: 100%;
+    display: block;
+}
+.spaceright .slick-prev {
+    left: 5px;
+    z-index: 50;
+}
+.spaceright .slick-next {
+    right: 5px;
+    z-index: 50;
+}
+.whitespace ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.whitespace ul li{
+  flex:0 0 50%;
+}
+.whitespace ul li .item{
+min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    margin: 0 5px;
+    padding: 0px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: -1px 1px 19px rgba(0,0,0,0.2);
+}
+.whitespace ul li .item h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.whitespace ul li .item strong{
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.whitespace ul li .item b{
+  font-size: 25px!important;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.redspace ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.redspace ul li{
+  flex:0 0 33.33%;
+}
+.redspace ul li .item{
+min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    background: #d12249;
+    padding: 0px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: -1px 1px 19px rgba(0,0,0,0.2);
+}
+.redspace ul li .item h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.redspace ul li .item strong{
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.mainArea .wrap {
+    display: flex;
+}
+.revenueMenu{
+min-height: 50px;
+    position: relative;
+    z-index: 30;
+}
+.revenueMenu .classYear {
+    top: 0px;
+}
+
+ul.adSideBox {
+    margin-left: 30px;
+    flex: 0 0 230px;
+    padding: 0 0 0 30px;
+    background: #fff;
+    border-left: 1px solid #eaeaea;
+}
+ul.adSideBox li {
+    padding: 0 0 20px 0;
+}
+ul.adSideBox li .Txt {
+    font-size: 13px;
+    color: #555;
+}
+ul.adSideBox h3 {
+    color: #b70930;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 0px;
+padding-bottom:15px;
+}
+.contentBox {
+    width: calc(100% - 270px);
+}
+.tableBox {
+    box-shadow: -2px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.tableBox table{
+    width: 100%;
+}
+.tableBox th {
+    border-bottom: 1px solid #6c93dc; 
+    background-color: #4c75c3;
+    color: #fff;
+}
+.tableBox td {
+    border-bottom: 1px solid #e1e1e1;
+    background-color: transparent;
+}
+
+.horizontalTable {
+    box-shadow: -2px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.horizontalTable table {
+    width: 100%;
+    min-width: 767px;
+}
+
+.horizontalTable table tr:nth-of-type(even) {
+  background: #f7f7f7;
+}
+
+.horizontalTable .horizontalTableInner {
+    overflow-x: auto;
+    cursor: move;
+}
+
+.m_horizontalTable {
+  display: none;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.m_horizontalTable .cloned {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 10px 8px;
+
+}
+
+.m_horizontalTable .cloned:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+
+.m_horizontalTable .cloned:first-child {
+
+    background: #4c75c3;
+    color: #fff;
+}
+
+
+.backBtn {
+    float: right;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #b7b7b7;
+    color: #fff;
+}
+.backBtn:hover {
+    color: #fff;
+    background: #d12249;
+}
+/*--共用設定--*/
+
+.titleStyle02 {
+    margin: 40px 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+
+
+.classNote {
+    padding-bottom: 20px;
+}
+
+
+
+.noteTxt {
+    padding: 15px 10px 0 10px;
+    color: #747474;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: .05em;
+}
+
+.textInnerList {
+box-shadow: -2px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    letter-spacing: .05em;
+}
+
+.textInnerList h3 {
+    width: calc(100% - 75px);
+}
+
+.textInnerList h3 a {
+    font-size: 15px;
+
+}
+
+.textInnerList li {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.topTitle {
+    background-color: #4c75c3;
+    color: #fff;
+    font-size: 14px;
+    padding: 16px 20px;
+}
+
+.topTitle .left {
+    float: left;
+    text-align: center;
+    width: 130px;
+}
+
+.topTitle .right {
+    overflow: hidden;
+}
+
+.yearBox {
+    width: 100%;
+    text-align: right;
+}
+
+.yearBox .yearLink li {
+    display: inline-block;
+}
+
+.yearBox .yearLink li a {
+    display: block;
+    color: #555;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.yearBox .yearLink li a.current {
+    font-weight: 500;
+    background: #cd2323;
+    color: #fff;
+}
+
+.yearBox .yearLink li a:hover {
+    background: #cd2323;
+    color: #fff;
+}
+
+
+
+/********標題區*******/
+
+
+
+
+/*-----公司資訊-----*/
+
+
+
+
+/*-----公司治理-----*/
+/*--董事會,功能性委員會--*/
+.faqList {}
+
+.faqList>li {
+    border-bottom: 1px dotted #eee;
+    z-index: 10;
+    position: relative;
+}
+
+.faqList>li h3 {
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 25px;
+    background-color: #fff;
+}
+
+.faqList>li h3 b {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-style: italic;
+    margin-right: 10px;
+    color: #d12249;
+}
+
+.faqList>li h3 a.toggleOpen {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    margin-top: -8.5px;
+    border: 1px solid #4c75c3;
+    border-radius: 50%;
+}
+
+.faqList>li h3 a.toggleOpen:before,
+.faqList>li h3 a.toggleOpen:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.5px;
+    margin-left: -4px;
+    width: 8px;
+    height: 1px;
+    background-color: #4c75c3;
+}
+
+.faqList>li h3 a.toggleOpen:after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.faqList>li .definition {
+    display: none;
+    padding: 20px 15px;
+    font-size: 14px;
+    color: #555;
+    line-height: 25px;
+}
+
+.faqList>li .definition::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.faqList>li .Img {
+    float: left;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.faqList>li .Img img {
+    display: block;
+    width: 100%;
+}
+
+.faqList>li .rightTxt {
+    float: left;
+    margin-top: 5px;
+}
+
+.faqList>li .rightTxt ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faqList>li .rightTxt ul li {
+    float: left;
+    width: 100%;
+}
+
+.faqList>li .rightTxt .left {
+    float: left;
+}
+
+.faqList>li .rightTxt .right {
+    overflow: hidden;
+}
+
+.faqList>li.current {
+    border-top: 1px dotted #7e8386;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
+    z-index: 20;
+}
+
+.faqList>li.current h3 {
+    font-size: 18px;
+    color: #fff;
+    background-color: #4c75c3;
+}
+
+.faqList>li.current a.toggleOpen {
+    border-color: #fff;
+}
+
+.faqList>li.current a.toggleOpen:after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    background-color: #fff;
+}
+
+/*--董事會重大決議--*/
+
+.resolutionList .Txt {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.resolutionList .resolutionNewsDate {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 130px;
+    text-align: center;
+}
+
+.resolutionList h3 {
+    width: calc(100% - 130px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resolutionList a {
+    display: block;
+}
+
+.resolutionList p {
+    display: block;
+}
+
+
+
+
+.resolutionTitleArea {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.resolutionTitleArea h1 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/*--內規及章程--*/
+.rulesBox .topTitle .left {
+    width: calc(100% - 100px);
+}
+
+.rulesBox .topTitle .right {
+    width: 100px;
+    text-align: center;
+}
+
+.rulesBox ul li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rulesBox ul h3 {
+    width: calc(100% - 75px);
+}
+
+.rulesBox ul h3 a {
+    display: block;
+}
+
+.rulesBox ul .btn {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.rulesBox ul .btn a {
+    display: inline-block;
+    width: 24px;
+}
+
+.rulesBox ul .btn a img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.reportMergeBox{
+    border-bottom: 1px solid #a7b5d0;
+    padding: 0 0 40px 0;
+}
+
+.reportYearBox{
+display:flex;
+flex-wrap:wrap;
+    padding:20px 0 0 0;
+}
+.reportYearBox li:first-child{
+padding-right:10px;}
+
+.reportYearBox li:last-child{
+padding-left:10px;}
+
+.reportYearBox li{
+width:50%;}
+.reportMergeBox,
+.reportIndividualBox,
+.reportYearBox {
+    position: relative;
+}
+
+.reportMergeBox:hover,
+.reportIndividualBox:hover,
+.reportYearBox:hover {
+    z-index: 1;
+
+}
+
+.reportMergeBox h3,
+.reportIndividualBox h3,
+.reportYearBox h3 {
+        margin: 10px 0 40px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.reportMergeBox a,
+.reportIndividualBox a,
+.reportYearBox a {
+
+}
+
+.reportMergeBox a.noFile,
+.reportIndividualBox a.noFile,
+.reportYearBox a.noFile {
+
+}
+
+.reportMergeBox a.noFile:hover,
+.reportIndividualBox a.noFile:hover,
+.reportYearBox a.noFile:hover {
+    color: #ccc;
+}
+
+.reportMergeBox a.noFile::after,
+.reportIndividualBox a.noFile::after,
+.reportYearBox a.noFile::after {
+    background-color: #ccc;
+}
+
+
+
+.reportIndividualBox,
+.reportYearBox {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+
+
+.reportMergeBox ul, .reportYearBox ul {
+    display: flex;
+}
+
+.reportMergeBox ul li, .reportYearBox ul li {
+    padding: 10px;
+    width: 25%;
+}
+.reportMergeBox ul li a b{
+    font-size: 15px;
+    display: block;
+}
+.reportYearBox ul li a b{
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+}
+.reportMergeBox a {
+    position: relative;
+    font-size: 50px;
+    display: block;
+    padding: 40px 20px;
+    border: 1px solid #e2e2e2;
+    transition:0.3s;
+    color:#424242;
+    overflow: hidden;
+}
+ .reportYearBox a {
+    position: relative;
+    font-size: 30px;
+    display: block;
+    padding: 40px 20px;
+    border: 1px solid #e2e2e2;
+    transition:0.3s;
+    color:#424242;
+    overflow: hidden;
+}
+.reportMergeBox a::after {
+    content: "\f103";
+    font-family: fontAwesome;
+    display: inline-block;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0%,-200%);
+    font-size: 20px;
+    transition: 0.8s;
+    opacity: 0;
+}
+ .reportYearBox a::after {
+    content: "\f103";
+    font-family: fontAwesome;
+    display: inline-block;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0%,-200%);
+    font-size: 20px;
+    transition: 0.8s;
+    opacity: 0;
+}
+.reportMergeBox a:hover::after {
+    transform: translate(0,-50%);
+    opacity: 1;
+    }
+.reportYearBox a:hover::after {
+    transform: translate(0,-50%);
+    opacity: 1;
+    }
+.reportMergeBox a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:#d12249;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-101%,0);
+
+    transition: 0.6s;
+}
+.reportYearBox a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:#4c75c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-101%,0);
+
+    transition: 0.6s;
+}
+.reportMergeBox a:hover::before, .reportYearBox a:hover::before {
+    transform: translate(0%,0);
+}
+.reportMergeBox a.noFile:hover {
+color:#fff;
+}
+.reportMergeBox a.noFile::before {
+    background:#cbcbcb;
+}
+.reportMergeBox a:hover, .reportYearBox a:hover {
+    transform: translate(0px,-8px);
+    color: #fff;
+box-shadow: 5px 2px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+/*--歷年股利--*/
+.dividendTable {
+    width: 100%;
+}
+
+.dividendTable .footable-toggle-btn {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.classYear {
+
+    position: absolute;
+    z-index: 20;
+    width: 140px;  
+    top: 10px;
+    right: 5px;
+}
+
+.classYear .main {
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #6a89c3;
+    border-radius: 5px;
+    background-color: #4c75c3;
+}
+
+.classYear .main::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.classYear .main b {
+    font-weight: 300;
+}
+
+.classYear .main i {
+    float: right;
+}
+
+.classYear ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.classYear ul a {
+    display: block;
+    padding: 13px;
+}
+
+.classYear ul a:hover,
+.classYear ul a.current {
+    color: #262626;
+    background-color: #f0f0f0;
+}
+
+.classYearList {
+    margin-bottom: 20px;
+}
+
+.classYearList .slick-current a {
+    color: #fff;
+    background-color: #676767;
+}
+
+.classYearList .slick-current a::before {
+    bottom: -10px;
+}
+
+.classYearList li {
+    padding-bottom: 20px;
+}
+
+.classYearList a {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    outline: none;
+    background-color: #eee;
+}
+
+.classYearList a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-color: #676767 transparent transparent transparent;
+}
+
+
+
+/*--股東常會--*/
+.shareholderBox .yearBox {
+    -webkit-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    transform: translateY(-25px);
+}
+
+.shareholderBox .titleStyle02 {
+
+}
+
+.shareholderBox .topTitle .left {
+    width: calc(100% - 100px);
+}
+
+.shareholderBox .topTitle .right {
+    width: 100px;
+    text-align: center;
+}
+
+.meetingDataList li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.meetingDataList .btnPdf {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/*--投資人行事曆--*/
+.m_yearLink {
+    display: none;
+}
+
+
+
+/*--聯絡投資人關係--*/
+.thankInfo {
+    font-size: 17px;
+    line-height: 1.6;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.formBox {
+    margin-top: 20px;
+    color: #2f2f2f;
+    font-size: 13px;
+
+}
+
+.formBox .read {
+    margin-top: 7px;
+}
+
+.formBox .read a {
+    color: #ba1e41;
+}
+.formBox .read a:hover {
+    text-decoration: underline;
+}
+.formBox .left {
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.formBox label {
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 15px;
+    color: #212121;
+}
+
+.formBox label em {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #d74b00;
+    border-radius: 50%;
+    margin-left: 10px;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.formBox input[type="text"],
+.formBox select,
+.formBox textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.formBox input[type="text"],
+.formBox select {
+    height: 35px;
+    line-height: 35px;
+}
+
+.formBox select,
+.formBox textarea {
+
+}
+
+.formBox input[type="text"] {
+    height: 35px;
+    line-height: 35px;
+}
+
+.formBox select {
+    color: #000;
+}
+
+.formBox textarea {
+    height: 200px;
+}
+.checkarea{
+    display: flex;
+    align-items: center;
+}
+/*驗證碼*/
+.captchaArea {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.captchaArea iframe {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+.captchaArea .refresh {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.captchaArea .right [class^='g-'] {
+    padding: 0;
+    height: 48px;
+    line-height: 43px;
+}
+
+.checkArea {
+    text-align: right;
+}
+
+.buttonArea a {
+display: inline-block;
+    background: #212121;
+    color: #fff;
+    font-size: 15px;
+    line-height: 45px;
+    padding: 0px 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+}
+
+
+.lightboxArea .itemBox {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1160px;
+    height: 90vh;
+    padding: 30px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    overflow-y: scroll;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+        box-shadow: 2px 1px 20px 0px rgba(0, 0, 0, 0.4)
+}
+.lightboxArea .itemBox .title{
+        font-size: 22px;
+    font-weight: 900;
+
+}
+.lightboxArea .itemBox.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightboxArea .btnClose {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: #d12249;
+    border-radius: 99em;
+    z-index: 25;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    justify-content: center;
+    align-items: center;
+}
+.lightboxArea .btnClose span{
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.lightboxArea .btnClose span::before, .lightboxArea .btnClose span::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0%;  
+  transition: 0.5s;
+}
+.lightboxArea .btnClose span::after{
+  transform: rotate(90deg);
+}
+.lightboxArea .btnClose:hover span::after{
+transform: rotate(135deg);
+}
+.lightboxArea .btnClose:hover span::before{
+  transform: rotate(-45deg);
+}
+.calendarBox {
+    margin-bottom: 40px;
+}
+
+
+
+.calendarBox .yearBox {
+    -webkit-transform: translateY(24px);
+    -ms-transform: translateY(24px);
+    transform: translateY(24px);
+}
+
+.calendarTable {}
+
+.calendarTable th {
+    color: #fff;
+    background-color: #54a946;
+}
+
+.calendarTable td {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.calendarTable th,
+.calendarTable td {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 16px 20px;
+}
+
+.calendarTable th a,
+.calendarTable td a {
+    font-weight: 300;
+}
+
+.calendarList>li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendarList>li+li {
+    border-bottom: 1px solid #eee;
+    padding: 18px 20px;
+}
+
+.calendarList>li+li:hover {
+    background-color: #f3f3f3;
+}
+
+
+.calendarList .titleBar {
+    background-color: #4c75c3;
+    color: #fff;
+    font-size: 12px;
+    padding: 16px 20px;
+    display: flex;
+    letter-spacing: 0px;
+}
+
+.calendarList div.date, .calendarList div.location {
+   flex:0 0 100px;
+text-align: center;
+}
+.calendarList div.btnPdf, .calendarList div.btnCalendar , .calendarList div.btnVideo {
+   flex:0 0 60px;
+text-align: center;
+}
+
+
+.calendarList div.time {
+   flex:0 0 50px;
+text-align: center;
+}
+
+
+.calendarList .maintitle{
+    width:calc(100% - 100px*2 - 60px*4);
+}
+.calendarList h3 {
+    font-size: 15px;
+}
+
+.calendarReportList>li> :first-child,
+.calendarReportList>li> :nth-child(3) {
+    width: 130px;
+    text-align: center;
+}
+
+.calendarReportList>li> :nth-child(2) {
+    width: calc(100% - 130px*2);
+}
+
+.calendarInvestorsList>li> :first-child,
+.calendarInvestorsList>li> :nth-child(3),
+.calendarInvestorsList>li> :nth-child(4),
+.calendarInvestorsList>li> :nth-child(5) {
+    width: 130px;
+    text-align: center;
+}
+
+.calendarInvestorsList>li> :nth-child(2) {
+    width: calc(100% - 130px*4);
+}
+
+.btnPdf a,
+.btnVideo a,
+.btnCalendar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #707070;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btnPdf a:hover,
+.btnVideo a:hover,
+.btnCalendar a:hover {
+    color: #2b7e3e;
+}
+
+.btnPdf {
+    display: block;
+}
+
+.btnPdf a {
+    background: url("https://www.igs.com.tw/en/investors/revenue/images/icon/pdfMin.png") 50% 50% no-repeat;
+}
+
+.btnPdfen a {
+    background: url("https://www.igs.com.tw/en/investors/revenue/images/icon/pdfMinen.png") 50% 50% no-repeat;
+}
+
+
+.btnPdf a:hover {
+
+}
+.stockTitle{
+    color: #d12249;
+    padding: 0 0 20px 0;
+}
+.stockBox .left {
+  float: left;
+  width: 225px;
+}
+
+.stockBox .left a {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #262626;
+  background-color: #f1f1f1;
+}
+
+.stockBox .left a:hover {
+  color: #fff;
+  background-color: #d12249;
+}
+
+.stockBox .Img {
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.stockBox .Img img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+@media(max-width: 1180px){
+.stockhomewrap{
+    width: 100%;
+    padding:0 20px;
+    margin: 0 auto;
+}
+.stockspace {
+    flex-direction: column;
+}
+.spaceright {
+    padding-left: 0px;
+    padding-top: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+.stockMenu > ol{
+    flex-wrap: wrap;
+}
+.stockMenu > ol dt{
+    width: 33.33%;
+}
+.stockMenu > ol dt .item {
+    padding: 0 7px 7px 7px;
+}
+.lightboxArea .itemBox {
+    width: 90vw;
+}
+}
+
+@media (max-width: 1023px) {
+.stockMenu > ol {
+    padding-top: 50px;
+}
+.spaceleft {
+    width: 100%;
+}
+.calendarReportList>li> :first-child, .calendarReportList>li> :nth-child(3) {
+    width: 80px;
+}
+.calendarReportList>li> :nth-child(2) {
+    width: calc(100% - 80px*2);
+}
+.calendarList .titleBar {
+    padding: 10px 5px;
+}
+.calendarList>li+li {
+    padding: 10px 5px;
+}
+.m_horizontalTable {
+    display: block;
+}
+
+.mainArea .wrap {
+    display: block;
+}
+.contentBox {
+    width: 100%;
+}
+
+ul.adSideBox {
+    margin-left: 0px;
+    padding: 30px 0 0 0;
+    border-left: none;
+}
+
+.textInnerList li {
+    padding: 10px 5px;
+}
+
+
+.resolutionList .resolutionNewsDate {
+    width: 110px;
+}
+
+.resolutionList h3 {
+    width: calc(100% - 110px);
+}
+
+
+
+}
+
+@media (max-width: 767px){
+.mobilebg{
+padding: 10px 5px;
+    background: #ececec;
+margin-bottom:5px;}
+
+.calendarList>li+li{
+flex-wrap:wrap;}
+
+.calendarList div.date, .calendarList div.location, .calendarList div.time{
+   flex:0 0 33%;
+padding:10px 0;
+text-align:left;
+
+}
+.calendarList div.btnPdf, .calendarList div.btnCalendar , .calendarList div.btnVideo {
+   flex:0 0 25%;
+}
+
+.calendarList .maintitle{
+    flex: 0 0 100%;
+}
+
+.classYear {
+
+    position: relative;
+margin-left:auto;
+    top: auto;
+    right: auto;
+margin-bottom:5px;
+}
+
+
+    .m_none{
+        display: none;
+    }
+
+    .stockBox .left {
+    float: none;
+    width: 100%;
+}
+.stockBox .Img {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+.redspace ul li {
+    flex: 0 0 100%;
+    flex-wrap:wrap;
+    padding-bottom: 20px;
+}
+
+
+}
+
+
+@media (max-width: 660px) {
+.whitespace ul li {
+    flex: 0 0 100%;
+    padding-bottom: 20px;
+}
+.stockMenu > ol dt{
+    width: 50%;
+}
+.calendarList .titleBar div{
+    display: none;
+}
+.calendarList .titleBar .maintitle{
+    display: block;
+}
+
+
+.reportMergeBox ul, .reportYearBox ul {
+    flex-wrap: wrap;
+}
+.reportMergeBox ul li, .reportYearBox ul li {
+    width: 50%;
+}
+.reportYearBox li{
+width:100%;}
+}
+
+
+
+@media (max-width: 460px) {
+.stockMenu > ol dt{
+    width: 100%;
+}
+.stockMenu > ol dt .item {
+    padding: 0 0 7px 0;
+}
+.stockMenu > ol {
+    margin: 0px;
+}
+}

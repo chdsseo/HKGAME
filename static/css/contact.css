@@ -1,0 +1,238 @@
+
+.formBox input[type="text"], .formBox select, .formBox textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul.iconSet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:30px 0 80px 0;
+}
+ul.iconSet li{
+  padding:0 10px;
+}
+ul.iconSet li a{
+  display: flex;
+  align-items: center;
+}
+ul.iconSet li a i{
+  width: 70px;
+  height: 70px;
+  border-radius: 99em;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  color:#ba1e41;
+  margin-right: 10px;
+}
+ul.iconSet li a b{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.thankInfo {
+  /*感謝資訊*/
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.thankInfo::after{
+  content: "";
+  width: 40px;
+  height: 1px;
+  display: block;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.formBox {
+  border-top: 2px solid #ba1e41;
+  padding-top:30px;
+  font-size: 15px;
+  color: #212121;
+  /*字的顏色*/
+}
+
+.formBox .list{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  padding:15px 0;
+  line-height: 35px;
+}
+
+.formBox label {
+  font-size: 15px;
+  color: #212121;
+  flex: 0 0 12%;
+}
+.formBox label.job {
+  text-align: center;
+}
+.formBox label.gender{
+  flex:0 0 100px;
+  text-align: center;
+}
+.formBox em {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+letter-spacing: 0px;
+  color: #fff;
+  background:#b8183c;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 10px;
+  padding:2px 3px;
+
+  /*星號的顏色*/
+}
+
+.formBox input[type="text"], .formBox select, .formBox textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formBox input[type="text"] {
+  width: 38%;
+  height: 35px;
+  line-height: 35px;
+}
+
+.formBox select {
+  height: 35px;
+}
+
+.formBox textarea {
+  display: block;
+  width: 88%;
+  height: 200px;
+}
+
+/*驗證碼*/
+.checkArea {
+margin-top: 5px;
+padding-top: 20px;
+border-top: 1px solid #f0f0f0;
+padding-left: 12%;
+display: flex;
+}
+
+.checkArea .btn {
+
+}
+
+.checkArea .btn a {
+    display: inline-block;
+    background: #212121;
+    color: #fff;
+    font-size: 15px;
+    line-height: 45px;
+    padding: 0px 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+}
+
+.checkArea .btn a::after {
+    display: none;
+}
+
+.error {
+  -webkit-box-shadow: 0 0 10px #f00;
+          box-shadow: 0 0 10px #f00;
+}
+@media(max-width: 1023px){
+.formBox label {
+  flex: 0 0 20%;
+}
+.formBox input[type="text"] {
+  width: 30%;
+}
+.formBox textarea {
+  width: 80%;
+}
+.checkArea {
+    padding-left: 20%;
+}
+}
+
+
+@media (max-width: 767px) {
+span.spacing{
+  display: block;
+  height: 30px;
+  width: 100%;
+}
+.formBox label {
+  flex: 0 0 30%;
+}
+.formBox label.gender {
+    text-align: left;
+}
+.formBox label.mr {
+    margin: 0 0 0 30%;
+}
+.formBox input[type="text"] {
+  width: 70%;
+}
+.formBox textarea {
+  width: 70%;
+}
+.formBox label.job {
+    text-align: left;
+}
+ul.iconSet{
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 0 20px 0;
+}
+ul.iconSet li{
+  padding:15px 0;
+}
+ul.iconSet li a b{
+  display: none;
+}
+.checkArea {
+  align-items: flex-start;
+
+  padding-left: 0%;
+  flex-direction: column;
+}
+.checkArea .btn {
+  padding-top: 10px;
+}
+}
+
+
+@media (max-width: 520px) {
+.formBox label.gender {
+  flex: 0 0 30%;
+}
+.formBox label {
+  flex: 0 0 100%;
+}
+
+.formBox label.mr {
+    margin: 0 0 0 0%;
+}
+.formBox input[type="text"] {
+  width: 100%;
+}
+.formBox textarea {
+  width: 100%;
+}
+
+}

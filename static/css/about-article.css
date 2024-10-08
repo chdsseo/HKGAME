@@ -1,0 +1,148 @@
+
+
+.aa01{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 380px;
+    background-size: 100% auto;
+    padding: 0 20px;
+    background-repeat: no-repeat;
+}
+.aa01 span{
+    font-size: 19px;
+    color: #000;
+    line-height: 1.8;
+    font-weight: 700;
+}
+.aa21{    transform: translate(0,-50px);}
+.aa02{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding:20px 40px;
+}
+.aa22{
+	align-items: flex-start;
+}
+.aa02 article{
+	width: 370px;
+	position: relative;
+	background: #2357ba;
+	padding:40px 10px;
+	box-shadow: 5px 7px 20px rgba(0,0,0,0.17);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.aa02 article::before{
+	content: "";
+	width: 130px;
+	height: 130px;
+	display: block;
+	background-size: cover;
+	position: absolute;
+	right: 105%;
+	top: 30%;
+	background:url(https://www.igs.com.tw/cn/upload/package_b/tw_package_list_18l05_cg9spq3jnr.png);
+}
+.aa22 article::before{
+	right: auto;
+	left: 105%;
+	top: 10%;
+	background:url(https://www.igs.com.tw/cn/upload/package_b/tw_package_list_18l05_rtxyat84wv.png);
+}
+.aa23 article::before{
+top: -30%;
+right: 90%;
+	background:url(https://www.igs.com.tw/cn/upload/package_b/tw_package_list_18l05_avjdwcpmg6.png);
+}
+.aa02 article::after{
+	content: "";
+	width: 1px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	transform-origin: top right;
+	background-color: #fff;
+	transform: rotate(40deg);
+}
+.aa02 article p{
+	font-size: 18px;
+	color:#fff;
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 550;
+}
+.aa02 article p::before{
+	content: "1";
+	width: 70px;
+	height: 70px;
+	background:url(../image/aaicon.png) no-repeat center center;
+	background-size: cover;
+	font-size: 40px;
+	text-align: center;
+	line-height: 70px;
+	margin-right: 15px;
+}
+.aa22 article p::before{
+	content: "2";
+}
+.aa23 article p::before{
+	content: "3";
+}
+.aa02 .othertxt{
+	padding-top: 50px;
+	color:#343434;
+	font-size:14px;
+	line-height: 2;
+	text-align: right;
+}
+.aa02 .othertxt span{
+	display: block;
+}
+.aa22 .othertxt {
+    text-align: left; 
+}
+.aa23{
+	background:url(https://www.igs.com.tw/cn/upload/package_b/tw_package_list_18l05_45stb9fzjr.jpg) no-repeat left center;
+	padding-top: 120px;
+}
+
+@media (max-width: 640px){
+	.aa02 .othertxt span{
+	display: inline;
+}
+.aa01{
+	display: block;
+	padding-top:30%; 
+	min-height: auto;
+	margin-bottom: 40px;
+}
+.aa21 {
+    transform: translate(0,0px);
+}
+
+.aa02 {
+    padding: 0 0 40px 0px;
+}
+.aa02 .othertxt {
+	    padding-top: 20px;
+    text-align: left;
+}
+.aa02 article::before {
+    display: none;
+}
+.aa02 article {
+    width: 100%;
+}
+.aa23 {
+    background: none;
+    padding-top: auto;
+}
+}

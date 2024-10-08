@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot");
+  src: url("../font/fontello.eot") format("embedded-opentype"), url("../font/fontello.woff") format("woff"), url("../font/fontello.ttf") format("truetype"), url("../font/fontello.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg') format('svg');
+  }
+}
+*/
+.box {
+  display: block;
+}
+
+.textEditor [class^="icon-"]:before, .textEditor [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.textEditor .icon-ok:before {
+  content: '\e800';
+}
+
+.textEditor .icon-quote:before {
+  content: '\e801';
+}
+
+.textEditor .icon-down-open:before {
+  content: '\e802';
+}
+
+.textEditor .icon-twitter:before {
+  content: '\e803';
+}
+
+.textEditor .icon-facebook:before {
+  content: '\e804';
+}
+
+.textEditor .icon-googleplus:before {
+  content: '\e805';
+}
+
+.textEditor .icon-github:before {
+  content: '\e806';
+}
+
+.textEditor .icon-dribbble:before {
+  content: '\e807';
+}
+
+.textEditor .icon-linkedin:before {
+  content: '\e808';
+}
+
+.textEditor .icon-instagram:before {
+  content: '\e809';
+}
+
+.textEditor .icon-mail:before {
+  content: '\e80a';
+}
+
+.textEditor .icon-tumblr:before {
+  content: '\e80b';
+}
+
+.textEditor .icon-pinterest:before {
+  content: '\e80c';
+}
+
+.textEditor .icon-web:before {
+  content: '\e80d';
+}
+
+.textEditor .icon-youtube:before {
+  content: '\e80e';
+}
+
+.textEditor .icon-vimeo:before {
+  content: '\e80f';
+}
+
+.textEditor .icon-download:before {
+  content: '\e810';
+}
+
+.textEditor .icon-phone:before {
+  content: '\e811';
+}
+
+.textEditor .icon-home:before {
+  content: '\e812';
+}
+
+.textEditor .icon-location:before {
+  content: '\e813';
+}
+
+.textEditor .icon-paper-plane:before {
+  content: '\e814';
+}
+
+.textEditor .icon-share:before {
+  content: '\e815';
+}
+
+.textEditor .icon-eye:before {
+  content: '\e817';
+}
+
+.textEditor .icon-pencil:before {
+  content: '\e818';
+}
+
+.textEditor .icon-attach:before {
+  content: '\e819';
+}

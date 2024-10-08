@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<!--手機解析度-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--各頁獨立資訊-->
+<title>聯絡投資人關係-Skytree Innovations香港遊戲開發公司</title>
+<meta property="og:title" content="聯絡投資人關係-Skytree Innovations香港遊戲開發公司">
+<meta property="og:type" content="website">
+
+<!--css-->
+<link rel="stylesheet" type="text/css" href="static/css/master1.css">
+<link rel="stylesheet" type="text/css" href="static/css/investor1.css">
+<!--favor icon-->
+<link rel="shortcut icon" href="https://www.SIG.com.tw/images/touch-icon/apple-icon-60x60.png">
+<!--touch_icon-->
+<link rel="apple-touch-icon" href="https://www.SIG.com.tw/images/touch-icon/apple-icon-60x60.png"> 
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.SIG.com.tw/images/touch-icon/apple-icon-76x76.png"> 
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.SIG.com.tw/images/touch-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.SIG.com.tw/images/touch-icon/apple-icon-152x152.png">
+
+<!--ga-->
+
+
+<script src="static/js/jquery-1.12.4.min.js"></script>
+<script async src="static/js/jquery.blockUI.js"></script>
+<script async src="static/js/jquery.form.js"></script> 
+<script src="static/js/ajax_function.js"></script> 
+<script async src="static/js/script.js"></script>
+<script>
+function open_layer_detail(div_name,width,height){
+	if(width==''){
+		width=0;
+	}
+	if(height==''){
+		height=0;
+	}
+	$.blockUI({
+	message:$('#'+div_name),
+		css:{ 
+		cursor:'default',
+		width: width + 'px',
+		height:height+ 'px',
+		padding:'0px',
+		top:($(window).height()-height)/2 + 'px',
+		left:($(window).width()-width)/2 + 'px'
+		}
+	});		
+}
+function open_loading_status(loading_name){
+	width=$('#'+loading_name).css('width').replace("px","");
+	height=$('#'+loading_name).css('height').replace("px","");
+	$.blockUI({
+	message:$('#'+loading_name),
+		css:{ 
+		cursor:'default',
+		border:'',
+		backgroundColor:'',
+		width: width + 'px',
+		height:height+ 'px',
+		padding:'0px',
+		top:($(window).height()-height)/2 + 'px',
+		left:($(window).width()-width)/2 + 'px'
+		}
+	});
+}
+function close_layer_detail(){
+	$.unblockUI();
+}
+function close_top_layer_detail(){
+	top.$.unblockUI();
+}
+//建立執行的div
+$(function(){
+	jQuery.browser = {};
+	(function () {
+	    jQuery.browser.msie = false;
+	    jQuery.browser.version = 0;
+	    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+	        jQuery.browser.msie = true;
+	        jQuery.browser.version = RegExp.$1;
+	    }
+	})();
+	$('body').prepend("<span id='iframe_string'></span>");
+	$('body').prepend('<div id="waiting_action" style="display:none;text-align:center;position: absolute;z-index: 99998;color:#FFF;font-size:12px;border:0px;"><img src="../database/function/loading_type/loading_big.gif" hspace="2" align="absmiddle"/><br><img src="../database/function/loading_type/loading_text.png" hspace="2" align="absmiddle"/></div>');
+});
+//end
+</script>
+
+<script>
+	var isMobile = false;
+	var isTablet =false;
+	var isAndroidOS =false;
+	var isiOS =false;
+	var isSafari =false;
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="static/css/css-Montserrat3004007CNotoSansTC400500.css" rel="stylesheet">
+</head>
+
+<body>
+	
+<!--other analysis-->
+
+    
+<div class="outerWrap b-box"><!--outerWrap-->   
+	
+    <header class="shrink"><!--header-->
+            <div class="logo"><a href="index1.html" title="Skytree Innovations香港遊戲開發公司">Skytree Innovations香港遊戲開發公司</a></div>
+
+<nav class="menuBox"><!--menuBox-->
+                        <ul class="menu cleafix" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><!--menu-->
+                            <li itemprop="name" class="dropDown"><a itemprop="url" href="about1.html"><b>關於Skytree</b>About SIG</a>
+                            
+	<div class="submenu"><ul><!--submenu-->
+        <li><a href="502.html">公司願景與使命</a></li>
+                <li><a href="461.html">經營理念</a></li>
+                <li><a href="452.html">經營方針</a></li>
+                <li><a href="441.html">公司簡介</a></li>
+                <li><a href="411.html">公司里程碑</a></li>
+                <li><a href="401.html">營業事業內容</a></li>
+                <li><a href="391.html">主要產品資訊</a></li>
+                <li><a href="381.html">資通安全管理</a></li>
+                <li><a href="521.html">智權政策及目標</a></li>
+        	</ul></div><!--submenu end-->
+
+                            </li>
+                            
+                            <li itemprop="name" class="dropDown"><a itemprop="url" href="news1.html"><b>最新訊息</b>News & Events</a>
+                             
+<div class="submenu"><!--classBox-->
+    <ul><!--classLink-->
+                <li><a href="recruit2.html" id="class_current_44">人才招募</a></li>
+                <li><a href="471.html" id="class_current_47">活動訊息</a></li>
+                <li><a href="453.html" id="class_current_45">最新消息</a></li>
+                <li><a href="news1.html" class="current" id="class_current_0">所有訊息</a></li>
+    </ul>
+</div>
+                            </li>
+                            <li itemprop="name" class="dropDown"><a itemprop="url" href="business1.html"><b>遊戲資訊</b>Business</a>
+                            <div class="submenu"><ul><!--submenu-->
+        <li>
+        	<a href="ArcadeGame1.html">商用機台</a>
+        </li>
+        <li>
+        	<a href="MobileGame1.html">行動遊戲</a>
+        </li>
+        <li><a href="business1.html" class="current">所有產品</a></li>
+</ul></div><!--submenu end-->
+                        </li>
+
+
+<li itemprop="name" class="dropDown investother"><a itemprop="url" href="investors1.html"><b>投資人關係</b>Investors</a>
+
+
+<div class="submenu"><!-- submenu -->
+                            <ul class="subList">
+                                <li>
+                                    <b>公司資訊</b>
+                                    <div class="listIns"><!-- listIns -->
+                                                <a href="information1.html">基本資料</a>
+                <a href="team1.html">組織團隊</a>
+                                            </div><!-- listIns end-->
+                                </li>
+                                <li>
+                                    <b>公司治理</b>
+                                    <div class="listIns"><!-- listIns -->
+                                        <a href="directors1.html">董事會</a>
+                                        <a href="resolution1.html">董事會重大決議</a>
+                                        <a href="elect1.html">獨立董事選任資訊</a>
+                                        <!--<a href="https://www.SIG.com.tw/investors/audit/">審計委員會</a>-->
+                                        				<a href="audit1.html">審計委員會</a>
+				<a href="51.html">薪酬委員會</a>
+		                                        <a href="rules1.html">重要公司治理規章及辦法</a>
+
+        <a href="341.html">勞資關係</a>
+                <a href="302.html">內部稽核組織及運作</a>
+                <a href="351.html">得獎記錄</a>
+                                                
+                                    </div><!-- listIns end-->
+                                </li>
+                                <li>
+                                    <b>財務資訊</b>
+                                    <div class="listIns"><!-- listIns -->
+                                        <a href="reports1.html">財務報表</a>
+                                        <a href="revenue1.html">月營收</a>
+                                    </div><!-- listIns end-->
+                                </li>
+                                <li>
+                                    <b>股東專欄</b>
+                                    <div class="listIns"><!-- listIns -->
+                                        <a href="meeting1.html">股東常會</a>
+                                        
+<a href="262.html">歷年股利</a>
+        
+<a href="272.html">利害關係人</a>
+        
+<a href="282.html">重大訊息</a>
+                                                <a href="qa2.html">問答集</a>
+                                        <a href="">聯絡投資人關係</a>
+                                    </div><!-- listIns end-->
+                                </li>
+								<li>
+									<b>永續發展</b>
+									<div class="listIns"><!-- listIns -->
+										<a href="cosocial1.html" class="mLink">永續發展</a>
+									</div><!-- listIns end-->
+                                </li>
+                                <li>
+                                    <a href="calendar1.html" class="mLink">投資人行事曆</a>
+                                    <a href="stock1.html" class="mLink">股價資訊</a>
+                                </li>
+                            </ul>
+                        </div><!-- submenu end-->
+
+
+                            </li>
+
+
+                            <li itemprop="name" class="dropDown"><a itemprop="url" href="recruit3.html"><b>人力資源</b>Recruit</a>
+                                <div class="submenu">
+                                    <a itemprop="url" href="recruit3.html">Skytree好生活</a>
+                                    <a itemprop="url" href="career1.html">職涯發展</a>
+                                    <a itemprop="url" href="join1.html">加入Skytree</a>
+                                </div>
+                            </li>                            
+                            <li itemprop="name"><a itemprop="url" href="contact4.html"><b>聯絡我們</b>Contact Us</a></li>
+                            
+                        </ul><!--menu end-->
+
+<div class="header-languageArea">
+    <i class="fa fa-globe" aria-hidden="true"></i>
+    <ul>
+    <li><a href="cn1.html">简体中文</a></li>
+    <li><a href="jp1.html">日本語</a></li>
+    <li><a href="en.html">English</a></li>
+    </ul></div><!--header-languageArea-->
+
+</nav><!--menuBox end-->
+</header><!--header end-->
+
+	    <!--banner-->
+    <div class="bannerArea"><!--bannnerArea-->
+        <div class="titleBox ins"><!--titleBox--><div class="wrap b-box"><!--wrap--></div></div><!--titleBox end-->
+        <div class="bannerBox"><!--bannerBox-->
+            <ul id="banner">
+	<li><img src="static/picture/en_banner_ins_list_18l10_i372iweaxb.jpg" alt="banner"></li>
+	    
+</ul>
+	        </div><!--bannerBox end-->
+    </div><!--bannerArea end-->
+        
+	<script>
+        $(function(){
+            $('.menu > li > a[href*="/investors/"]').parent('li').addClass('current').find('a[href*="/contact/"]').addClass('current');
+        });
+    </script>
+        
+<div class="bread"><!--bread--><div class="wrap"><!--wrap-->
+<a href="index1.html" title="Skytree Innovations香港遊戲開發公司">首頁</a><span>/</span>
+<a href="investors1.html" title="投資人關係">投資人關係</a><span>/</span>股東專欄
+</div><!--wrap end--></div><!--bread end-->
+
+
+
+
+    <!--main-->
+    <div class="mainArea"><!--mainArea-->
+<h2 class="pagetitle"><em>Investors</em>投資人關係</h2>
+<h1 class="articleTitle">聯絡投資人關係</h1>
+
+        <div class="wrap"><!--wrap-->                    
+            <div class="contentBox"><!--mainArea-->
+				<div class="thankInfo"><!--thankInfo-->
+若您需要進一步洽詢或對Skytree電子投資人關係有任何建議，歡迎來信與我們的投資人關係專員聯絡。   
+</div><!--thankInfo end-->				
+<div class="formBox clearfix"><!--formBox-->
+    <form method="post" name="service_form" enctype="multipart/form-data" id="service_form">
+            <div class="g-tv-6">
+                <div class="left"><label for="data_name">姓名<em></em></label><label class="gender mr"><input name="data_sex" type="radio" value="0" checked="checked">先生</label><label class="gender"><input name="data_sex" type="radio" value="1">女士</label></div>
+                <div class="right"><input type="text" id="data_name" name="data_name" data-note="姓" class="require" placeholder="姓"></div>
+            </div>
+            <div class="g-tv-6">
+                <div class="left m_none"></div>
+                <div class="right"><input type="text" id="data_name_last" name="data_name_last" data-note="名" class="require" placeholder="名"></div>
+            </div>
+            <br style="clear:both;">
+            <div class="g-tv-12">
+                <div class="left"><label for="data_company">公司名稱</label></div>
+                <div class="right"><input type="text" id="data_company" name="data_company" data-note="公司名稱"></div>
+            </div>
+            <br style="clear:both;">
+            <div class="g-tv-6">
+                <div class="left"><label for="data_email">電子信箱<em></em></label></div>
+                <div class="right"><input type="text" id="data_email" name="data_email" data-note="電子信箱" class="require"></div>
+            </div> 
+            <div class="g-tv-6">
+                <div class="left"><label for="data_telephone">公司電話<em></em></label></div>
+                <div class="right"><input type="text" id="data_telephone" name="data_telephone" data-note="公司電話" class="require"></div>
+            </div>
+            <br style="clear:both;">
+			<div class="g-tv-4">
+				<div class="left"><label for="data_sort_title">公司類型</label></div>
+				<div class="right">
+					<select name="data_sort_title" id="data_sort_title">
+					    <option value="" selected="selected">選擇公司類型</option>
+					    					    <option value="買方">買方</option>
+					    					    <option value="賣方">賣方</option>
+					    					    <option value="投資顧問">投資顧問</option>
+					    					    <option value="企業">企業</option>
+					    					    <option value="媒體">媒體</option>
+					    					    <option value="其他">其他</option>
+					    					</select>
+				</div>
+			</div>
+			<div class="g-tv-4">
+				<div class="left"><label for="data_country_title">國家 / 地區<em></em></label></div>
+				<div class="right">
+      				<select id="data_country_title" name="data_country_title" data-note="國家 / 地區" class="require">
+      					<option value="" selected>選擇國家 / 地區</option>
+                          <option value="Afghanistan">Afghanistan</option>
+                          <option value="Albania">Albania</option>
+                          <option value="Algeria">Algeria</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Australia">Australia</option>
+                          <option value="Austria">Austria</option>
+                          <option value="Bahrain">Bahrain</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="Belgium">Belgium</option>
+                          <option value="Belize">Belize</option>
+                          <option value="Brazil">Brazil</option>
+                          <option value="Bulgaria">Bulgaria</option>
+                          <option value="Canada">Canada</option>
+                          <option value="Chile">Chile</option>
+                          <option value="Colombia">Colombia</option>
+                          <option value="Croatia">Croatia</option>
+                          <option value="Czech Republic">Czech Republic</option>
+                          <option value="Denmark">Denmark</option>
+                          <option value="Egypt">Egypt</option>
+                          <option value="Estonia">Estonia</option>
+                          <option value="Finland">Finland</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="Ghana">Ghana</option>
+                          <option value="Greece">Greece</option>
+                          <option value="Hong Kong">Hong Kong</option>
+                          <option value="Hungary">Hungary</option>
+                          <option value="Iceland">Iceland</option>
+                          <option value="India">India</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Iran">Iran</option>
+                          <option value="Iraq">Iraq</option>
+                          <option value="Ireland">Ireland</option>
+                          <option value="Israel">Israel</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Jordan">Jordan</option>
+                          <option value="Kenya">Kenya</option>
+                          <option value="Korea">Korea</option>
+                          <option value="Kuwait">Kuwait</option>
+                          <option value="Latvia">Latvia</option>
+                          <option value="Lebanon">Lebanon</option>
+                          <option value="Lithuania">Lithuania</option>
+                          <option value="Malaysia">Malaysia</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Monaco">Monaco</option>
+                          <option value="Morocco">Morocco</option>
+                          <option value="Netherlands">Netherlands</option>
+                          <option value="New Zealand">New Zealand</option>
+                          <option value="Norway">Norway</option>
+                          <option value="Pakistan">Pakistan</option>
+                          <option value="Oman">Oman</option>
+                          <option value="Peru">Peru</option>
+                          <option value="Philippines">Philippines</option>
+                          <option value="Poland">Poland</option>
+                          <option value="Portugal">Portugal</option>
+                          <option value="Qatar">Qatar</option>
+                          <option value="Romania">Romania</option>
+                          <option value="Russian Federation">Russian Federation</option>
+                          <option value="Saudi Arabia">Saudi Arabia</option>
+                          <option value="Senegal">Senegal</option>
+                          <option value="Serbia">Serbia</option>
+                          <option value="Singapore">Singapore</option>
+                          <option value="Slovakia">Slovakia</option>
+                          <option value="Slovenia">Slovenia</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Spain">Spain</option>
+                          <option value="Sweden">Sweden</option>
+                          <option value="Switzerland">Switzerland</option>
+                          <option value="Taiwan">Taiwan</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Tunisia">Tunisia</option>
+                          <option value="Turkey">Turkey</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="United Arab Emirates">United Arab Emirates</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="United States">United States</option>
+                          <option value="Viet Nam">Viet Nam</option>
+                          <option value="Yemen">Yemen</option>
+                          <option value="others">others</option>
+                   </select>
+				</div>				
+			</div>
+			<div class="g-tv-4">
+				<div class="left"><label for="data_role_title">您的角色<em></em></label></div>
+				<div class="right">
+					<select name="data_role_title" id="data_role_title" data-note="您的角色" class="require">
+					    <option value="" selected="selected">選擇角色</option>
+					    					    <option value="個人投資者">個人投資者</option>
+					    					    <option value="賣方分析師">賣方分析師</option>
+					    					    <option value="買方分析師">買方分析師</option>
+					    					    <option value="投資組合經理">投資組合經理</option>
+					    					    <option value="經紀人/投資顧問">經紀人/投資顧問</option>
+					    					    <option value="新聞工作者">新聞工作者</option>
+					    					    <option value="員工">員工</option>
+					    					    <option value="其他">其他</option>
+					    					</select>
+				</div>			
+			</div>
+            <br style="clear:both;">
+            <div class="g-tv-12">
+                <div class="left"><label for="data_exp">您的訊息<em></em></label></div>
+                <div class="right"><textarea id="data_exp" name="data_exp" data-note="您的訊息" class="require"></textarea></div>
+            </div>
+
+        	<div class="g-tv-12 captchaArea">
+                <div class="left"><label for="data_exp">驗證碼<em></em></label></div>
+                <div class="right">                 
+                    <div class="g-tv-6 checkarea">
+                    	<input type="text" id="chk_word" name="chk_word" placeholder="請輸入圖片顯示的數字" class="require" data-note="驗證碼">
+                    </div>
+                    <div class="g-tv-6">
+                    	<iframe src="chk_pic.html" name="rundata_pic" width="120" height="30" align="middle" scrolling="No" frameborder="0" hspace="5" vspace="" id="rundata_pic" title="驗證碼"></iframe>
+                    	<a href="javascript:self.rundata_pic.location.reload()" title="重新取得驗證碼" class="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                    	<noscript>可使用瀏覽器功能F5重新整理取得新的驗證碼</noscript>
+                    	<a class="checkTips" href="https://www.SIG.com.tw/check_key/show_codes.php" target="_blank" title="無法辨識請點此讀取-另開新視窗"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 無法辨識請點此讀取</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-tv-12">
+            	<p class="read">
+            		<label>
+            			<input type="checkbox" class="readBox require">我已經詳細閱讀<a href="javascript:;" class="lightboxBtn">使用條款</a>及<a href="javascript:;" class="lightboxBtn">隱私權原則</a>
+            		</label>
+            	</p>
+            </div>
+            
+            <div class="g-tv-12 checkArea"><!--checkArea-->
+                <!--送出按鈕--> 
+                <div class="buttonArea clearfix">
+                     <a class="submit" id="submit_btn" onclick="senddata()" onkeypress="senddata();">確認送出</a><i id="submit_loading_icon" class="fa fa-spinner fa-spin" style="display:none"></i>
+                </div>    
+            </div><!--checkArea end-->
+    </form>
+</div><!--formBox end-->
+
+
+<script>
+function wirte_iframe(){
+	$('#iframe_string').html("<iframe height='0' name='rundata_action' frameborder='0' scrolling='no' width='0' style='display:none' src='' title='程式資料處理的位置'></iframe>");
+}
+</script>
+<span id="iframe_string"></span>
+<div id="loading_icon_images" style="
+display:none;
+text-align:center;
+position: absolute;
+z-index: 99998;
+color:#FFF;
+font-size:12px;
+border:0px;
+">
+<img src='static/picture/loading_big.gif' hspace='2' align='absmiddle' border='0'><br><img src='static/picture/loading_text.png' hspace='2' align='absmiddle' border='0'>
+</div><span id="do_ajax_javascript"></span><script type="text/javascript">
+function senddata(){//必填驗證
+	var error=0;
+	var msg='';
+	
+	$('#service_form input,#service_form select').removeClass('error');
+	
+	$('.require').each(function(){
+		if($(this).val()==""){
+			$(this).addClass('error');
+			msg += '※' + $(this).data('note') + '欄位必填' + '\n';
+			error = 1;
+		}
+	});
+		
+	if(! isEmail($('#data_email').val())){
+		$('#data_email').addClass('error');
+		msg += '※' + 'email格式錯誤';
+		error = 1;
+	}
+
+	if( $('.readBox').is(":not(:checked)") ) {
+        msg += '※' + '請詳細閱讀使用條款及隱私權原則';
+        error = 1;
+    }
+			
+	if(error==1){
+		alert(msg);
+		return false;
+	}
+
+
+	
+	//$(this).prop("disabled",true).html('<i class="fa fa-spinner fa-spin" />');
+	$('#service_form #submit_btn').hide();
+	$('#submit_loading_icon').show();
+	
+	wirte_iframe();
+	$('#service_form').attr('target','rundata_action');
+	$('#service_form').attr('action','https://www.SIG.com.tw/investors/act.php');
+	$('#service_form').submit();		
+}
+</script>
+			</div><!--mainArea end-->
+
+            
+
+
+
+
+
+
+
+
+<ul class="adSideBox">
+
+	    
+    <li>
+            <h3>法人諮詢公司股務及投資人聯繫平台</h3>
+            <p>公司股務：陳必佳<br>
+聯絡電話：02-22995048#1208<br>
+<br>
+投資人聯繫平台：<br>
+代理發言人 陳阿見總經理<br>
+聯絡電話：02-22995048#1300<br>
+<br>
+<br>
+&nbsp;</p>
+</li><!--data-->
+
+	    
+    <li>
+            <h3>股票過戶機構</h3>
+            <p>群益金鼎證券股份有限公司股務代理部<br>
+電話：02-2702-3999&nbsp;<br>
+地址：10601台北市敦化南路二段97號B2<br>
+網址：<a href="https://www.capital.com.tw/Default.asp?" target="_blank">http://www.capital.com.tw</a></p>
+</li><!--data-->
+
+	
+</ul><!--adSideBox-->
+    	</div><!--wrap end-->
+        
+    	
+    </div><!--contentBox end-->
+
+    
+    <script src="static/js/jquery-ui-core-min.js"></script> 
+    <!--footer-->
+    <!--footer-->
+    <footer><!--footer-->
+        <div class="wrap"><!--wrap-->
+            
+
+<div class="downMenu"><!--menu-->
+
+<ol>
+<a href="about1.html" title="關於我們">
+
+	關於我們		
+	</a>
+
+<ul>
+	<li><a href="502.html">公司願景與使命</a></li>
+	<li><a href="461.html">經營理念</a></li>
+	<li><a href="452.html">經營方針</a></li>
+	<li><a href="441.html">公司簡介</a></li>
+	<li><a href="411.html">公司里程碑</a></li>
+	<li><a href="401.html">營業事業內容</a></li>
+	<li><a href="391.html">主要產品資訊</a></li>
+	<li><a href="381.html">資通安全管理</a></li>
+	<li><a href="521.html">智權政策及目標</a></li>
+</ul>
+
+</ol>
+  
+  <ol>
+<a href="news1.html" title="最新訊息">
+
+	最新訊息		
+	</a>
+
+<ul>
+	<li><a href="453.html">最新消息</a></li>
+	<li><a href="471.html">活動訊息</a></li>
+	<li><a href="recruit2.html">人才招募</a></li>
+</ul>
+
+</ol>
+  
+  <ol>
+<a href="business1.html" title="遊戲資訊">
+
+	遊戲資訊		
+	</a>
+
+<ul>
+	<li><a href="ArcadeGame1.html">商用機台</a></li>
+	<li><a href="MobileGame1.html">行動遊戲</a></li>
+</ul>
+
+</ol>
+  
+  <ol>
+<a href="investors1.html" title="投資人關係">
+
+	投資人關係		
+	</a>
+
+<ul>
+	<li><a href="investors1.html">公司資訊</a></li>
+	<li><a href="investors1.html">公司治理</a></li>
+	<li><a href="investors1.html">財務資訊</a></li>
+	<li><a href="investors1.html">股東專欄</a></li>
+	<li><a href="calendar1.html">法人說明會</a></li>
+	<li><a href="stock1.html">股價資訊</a></li>
+</ul>
+
+</ol>
+  
+  <ol>
+<a href="recruit3.html" title="人力資源">
+
+	人力資源		
+	</a>
+
+<ul>
+	<li><a href="recruit3.html">Skytree好生活</a></li>
+	<li><a href="career1.html">職涯發展</a></li>
+	<li><a href="join1.html">加入Skytree</a></li>
+</ul>
+
+</ol>
+  
+  <ol>
+<a href="contact5.html" title="聯絡我們">
+
+	聯絡我們		
+	</a>
+
+<script type="text/javascript" src="static/js/jquery.fancybox.pack.js"></script>
+<link href="static/css/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css">
+<ul>
+	<li><a href="contact5.html">聯絡表單</a></li>
+	<li><a href="ESGQuest.html">利害關係人問卷</a></li>
+	<li><a href="javascript:;" id="fancyboxMail">獨立董事信箱</a></li>
+</ul>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#fancyboxMail").click(function() {
+		$.fancybox.open({
+			href : "https://www.SIG.tw/Project/IDreport/report.php",
+			type : "iframe",
+			padding : 8
+		});
+	});
+});
+</script>
+
+</ol>
+  
+  
+</div><!--menu end-->
+  
+<div class="bottom"><!-- bottom -->
+
+<h5>SOCIAL & LANGUAGE</h5>
+<div class="sandlang"><!--social-->
+<div class="social">
+<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+<a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+</div><!--social end-->
+
+<div class="languageArea">
+    <h5>繁體中文<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+    <ul>
+    <li><a href="cn1.html">简体中文</a></li>
+    <li><a href="jp1.html">日本語</a></li>
+    <li><a href="en.html">English</a></li>
+    </ul></div><!--languageArea-->
+
+</div><!--sandlang-->
+
+<h5>CONTACT</h5>
+<div class="footerInfo">248新北市五股區五工路130號<br>
+Tel. 852 9416 3981　</div>
+<div class="copyright"><!-- copyright -->
+Copyright © Skytree Innovations CO., LTD.
+All Rights Reserved. Design by <a href="/" target="_blank">IBest</a>
+</div><!-- copyright end -->
+
+
+</div><!-- bottom end -->
+
+        </div><!--wrap end-->        
+    </footer><!--footer end-->
+
+</div><!--outerWrap end-->
+
+
+
+
+<div class="m_menu b-box clearfix"><!--m_menu-->
+    
+    <div class="mask"></div>
+    
+    <div class="controlBox clearfix"><!--controlBox-->    
+        
+   
+        <div class="m_logo"><a href="index1.html"><img src="static/picture/logo_m1.png"></a></div>
+
+        <a class="main"><span></span></a>
+    </div><!--controlBox end-->
+    
+    <div class="hideBox"><!--hideBox-->
+       
+    <div class="m_languageArea">
+    <h5>繁體中文<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+    <ul>
+    <li><a href="cn1.html">简体中文</a></li>
+    <li><a href="jp1.html">日本語</a></li>
+    <li><a href="en.html">English</a></li>
+    </ul>    </div><!--languageArea-->
+  
+        <p class="sp sp_menu">MENU</p>        
+        
+    </div><!--hideBox end-->
+</div><!--m_menu end-->
+
+<!--general Js-->
+<script src="static/js/jsManage1.js"></script>
+<script src="static/js/dragscroll.js"></script>
+
+
+<script src="static/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript">
+
+$('.outerWrap').waypoint(function(){
+        $('.outerWrap').addClass('outerWrapShow');
+    },{
+        offset:'99%'
+    });
+
+</script>
+
+
+<script type="text/javascript">
+$(function(){
+    $('h2.pagetitle').appendTo($('.titleBox .wrap'));       
+ });       
+</script>
+
+<!--lightGallery-->
+<link rel="stylesheet" href="static/css/lightgallery.css">
+<script src="static/js/lightgallery-all.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.titan').lightGallery({
+        hash: false
+    });
+});
+</script>
+
+<!-- slick -->
+<link rel="stylesheet" href="static/css/slick-theme.css">
+<link rel="stylesheet" href="static/css/slick.css">
+<script src="static/js/slick.min.js"></script>
+<script>
+    $(function() {
+        $('#banner').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            cssEase: 'ease-in-out'
+        });
+        $('.linkList').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            cssEase: 'ease-in-out'
+        });
+    });
+</script>
+
+<!--footable-->
+<link rel="stylesheet" type="text/css" href="static/css/footable.core.css">
+<script src="static/js/footable.js"></script>
+<script>
+	$('table.responsive').footable();
+
+    /*
+ * Replace all SVG images with inline SVG
+ */
+jQuery('img.svg').each(function(){
+    var $img = jQuery(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+
+    jQuery.get(imgURL, function(data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = jQuery(data).find('svg');
+
+        // Add replaced image's ID to the new SVG
+        if(typeof imgID !== 'undefined') {
+            $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+
+        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+        }
+
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+
+    }, 'xml');
+
+});
+</script>
+
+
+<!--fb-->
+<div id="fb-root"></div>
+
+
+
+<div class="lightboxArea">
+<ul>
+	<li>
+		<div class="itemBox" data-box="隱私權政策" id="lightbox0"><!-- itemBox -->
+			<a href="javascript:;" class="btnClose"><span></span></a>
+
+				<div class="title">隱私權政策</div>
+				<div class="Txt textEditor"><span style="color:#ff0000;">資料整理中</span></div>
+
+		</div><!-- itemBox end-->
+	</li>
+	<li>
+		<div class="itemBox" data-box="使用條款" id="lightbox1"><!-- itemBox -->
+			<a href="javascript:;" class="btnClose"><span></span></a>
+
+				<div class="title">使用條款</div>
+				<div class="Txt textEditor"><span style="color:#ff0000;">資料整理中</span></div>
+
+		</div><!-- itemBox end-->
+	</li>
+</ul>
+</div>
+
+
+<!--customer Js-->
+<script>
+    (function($){
+        document.querySelectorAll('.itemBox').forEach(function(ele){
+            var boxName = ele.dataset.box;
+            document.querySelectorAll('.lightboxBtn').forEach(function(btn){
+                if(btn.getAttribute('href') === 'javascript:;') {
+                    var btnName = btn.textContent;
+
+                    if( btnName.indexOf(boxName.slice(0, 1)) > -1) {
+                        btn.setAttribute('href', '#'+ele.getAttribute('id'));
+                    }
+                }
+            });
+        });
+
+        var body = document.body;
+
+        document.querySelectorAll('.lightboxBtn').forEach(function(btn){
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                var href = btn.getAttribute('href');
+                document.querySelector(href).classList.add('show');
+                body.setAttribute('style', 'overflow: hidden;');
+            });
+        });
+
+        document.querySelectorAll('.btnClose').forEach(function(cBtn){
+            cBtn.addEventListener('click', function(){
+                cBtn.parentElement.classList.remove('show');
+                body.removeAttribute('style');
+
+            })
+        });
+
+    })($);
+</script>
+<script>
+    $(function(){
+        $('.bread .wrap').append('<span>/</span>'+$('.articleTitle').text());
+    });
+</script>
+
+</body>
+</html>

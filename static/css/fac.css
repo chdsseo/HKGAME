@@ -1,0 +1,294 @@
+
+/* CSS Document */
+.serviceList {
+  margin: 0 -40px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.serviceList li {
+  width: 33.33%;
+  padding:30px 40px;
+  text-align: center;
+}
+.serviceList .item {
+  position: relative;
+  transition: 0.8s;
+  padding:60px 20px;
+  box-shadow: 3px 5px 20px 0px rgba(0,0,0,0.1);
+}
+.serviceList .item a{
+  display: block;
+  z-index: 100;
+  position: relative;
+}
+.serviceList li:hover .item{
+  background:#353535;
+}
+.serviceList .item::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  display: block;
+  background:#d12249;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.serviceList li:hover .item::before {
+  width: 100%;
+}
+.serviceList .item .Img{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 99em;
+  background-color: #d12249;
+}
+.serviceList .item .Img a{
+  
+}
+.serviceList .item .Img a:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:#b52142;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50px,60px) rotate(50deg);
+}
+.serviceList .item .Img a img{
+  position: relative;
+  z-index: 50;
+  display: block;
+}
+.serviceList .item .Txt{
+  padding-top: 30px;
+  color:#676767;
+  font-size: 14px;
+}
+.serviceList li:hover .item .Txt{
+  color:#fff;
+}
+.serviceList .item .Txt h3{
+  font-size: 17px;
+  line-height: 1.4;
+  padding-bottom: 30px;
+  font-weight: 550;
+}
+.serviceList .item .Txt h3 a{
+  display: block;
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+.serviceList .item .Txt h3 em{
+  color: #d12249;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+.serviceList li:hover .Txt h3 a {
+  color: #fff;
+}
+.serviceList li .Txt p{
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+}
+
+.thankInfo {
+  /*感謝資訊*/
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+ul.recruitClass{
+  padding:40px 0;
+  display: flex;
+}
+ul.recruitClass li{
+  width: 50%;
+  border: 1px solid #ececec;
+}
+ul.recruitClass li a{
+  padding:10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color:#000;
+}
+ul.recruitClass li a svg{
+  width: 90px;
+  height: 80px;
+  margin-right: 10px;
+}
+ul.recruitClass li.current{
+  background:#83539d;
+  position: relative;
+  border: 1px solid #83539d;
+}
+ul.recruitClass li.current::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 32.5px 0 32.5px;
+  border-color: #83539d transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+ul.recruitClass li.current a path {
+  fill: #fff;
+}
+ul.recruitClass li.current a{
+  color:#fff;
+}
+.facList {
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.facList li {
+  width: 25%;
+  padding:30px 15px 10px 15px;
+}
+.facList .Img {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 5px 20px 0px rgba(0,0,0,0.1);
+}
+.facList .Img a::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:#000;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: 0.9s;
+}
+.facList li:hover .Img a::before{
+  opacity: 0.5;
+}
+.facList .Img a::after{
+  content: "\f002";
+  font-family: fontAwesome;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,200%);
+  position: absolute;
+  z-index: 10;
+  background:#d12249;
+  border-radius: 99em;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.9s;
+  opacity: 0;
+}
+.facList li:hover .Img a::after{
+  transform: translate(-50%,-50%);
+  opacity: 1;
+}
+.facList .Img a{
+  display: block;
+   z-index: 5;
+   position: relative;
+}
+.facList .Img img {
+  display: block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.facList .Txt {
+  padding:25px 10px 0 10px;
+}
+.facList .Txt h3 a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+}
+
+.facList .Txt p {
+  height: 40px;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #676767;
+  overflow: hidden;
+}
+
+
+
+
+
+
+@media(max-width: 1180px){
+.facList li {
+  width: 33.33%;
+}
+.serviceList {
+  margin: 0 -10px;
+}
+.serviceList li {
+  padding:30px 10px;
+}
+
+}
+
+
+@media(max-width: 767px){
+.facList li {
+  width: 50%;
+}
+.serviceList li {
+  width: 50%;
+  text-align: center;
+}
+
+}
+@media(max-width: 600px){
+.facList li {
+  width: 100%;
+}
+.serviceList li {
+  width: 100%;
+}
+.thankInfo {
+    text-align: left;
+}
+ul.recruitClass li a svg {
+    width: 40px;
+    height: 36px;
+    margin-right: 5px;
+}
+ul.recruitClass li a {
+    font-size: 16px;
+}
+}
